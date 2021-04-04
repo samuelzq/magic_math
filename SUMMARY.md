@@ -2,7 +2,7 @@
 
 * [序](README.md)
 * [第一章 数的魔法](di-yi-zhang.md)
-* [第二章](di-er-zhang.md)
+* [第二章 代数的魔力](di-er-zhang.md)
 * [第三章](di-san-zhang.md)
 * [第四章](di-si-zhang/README.md)
   * [第五章](di-si-zhang/untitled.md)
