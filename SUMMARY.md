@@ -4,7 +4,7 @@
 * [第一章 数的魔法](di-yi-zhang.md)
 * [第二章 代数的魔力](di-er-zhang.md)
 * [第三章 9的魔力](di-san-zhang.md)
-* [第四章](di-si-zhang.md)
+* [第四章 计数的魔力](di-si-zhang.md)
 * [第五章](untitled.md)
 * [第六章](di-liu-zhang.md)
 * [第七章](di-qi-zhang.md)
