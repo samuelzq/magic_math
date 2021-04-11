@@ -1,12 +1,12 @@
-# 第九章
+# 第九章 三角函数的魔力
 
 
 
 20° = π / 9
 
-## 三角函数的魔力
+## 
 
-**三角函数的高点**
+## **三角函数的高点**
 
 三角学使我们可以解决用经典几何无法解决的几何问题。例如，考虑以下问题.
 
@@ -25,82 +25,89 @@
 当然，如果以上三种方法都不能吸引你，那么我们必须求助于更多的数学解决方案，而这正是本章的主题。  
 
 
-三角学和三角形
+## 三角学和三角形
 
 三角学这个词有希腊词根trigon和metria，字面意思是三角测量。我们首先分析一些经典的三角形。
 
 **等腰直角三角形**。在等腰直角三角形中，有一个90°角，另外两个角必须相等。这样另一个角是45°\(因为三角形内角的和是180°\)，所以我们把这样的三角形称为45-45-90三角形。如果两条直角边的长度是1，那么根据勾股定理，斜边长度一定是长度。注意，所有等腰直角三角形的比例都是相同的，如下图所示。
 
-![](file:///C:/Users/samuel/AppData/Local/Temp/msohtmlclip1/01/clip_image003.jpg)
-
-在一个45-45-90度的三角形中，边长是成比例的。
+![&#x5728;&#x4E00;&#x4E2A;45-45-90&#x5EA6;&#x7684;&#x4E09;&#x89D2;&#x5F62;&#x4E2D;&#xFF0C;&#x8FB9;&#x957F;&#x662F;&#x6210;&#x6BD4;&#x4F8B;&#x7684;](.gitbook/assets/image%20%28155%29.png)
 
 30-60-90三角形。在等边三角形中，所有边的长度相等，所有角都是60°。如果将等边三角形划分为两个相等的部分，如下图所示，我们得到两个直角三角形，它们的角分别为30°、60°和90°。如果等边三角形的边长都是2，那么直角三角形的斜边长为2，短直角边长为1。根据勾股定理，长直角边长是。因此，所有的30-60-90三角形都有相同的比例，\(或者我记得，它们就像1、2一样简单\)。特别是，如果斜边长度是1，那么另两条边长度分别是1/2。
 
-![](file:///C:/Users/samuel/AppData/Local/Temp/msohtmlclip1/01/clip_image005.jpg)
+![](.gitbook/assets/image%20%28159%29.png)
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">
-        <p>&#x65C1;&#x767D;</p>
-        <p><b>&#x5F53;&#x6B63;&#x6574;&#x6570;a&#x3001;b&#x3001;c&#x6EE1;&#x8DB3;a2 + b2 = c2&#x65F6;&#xFF0C;&#x6211;&#x4EEC;&#x79F0;(a, b, c)</b>&#x6BD5;&#x8FBE;&#x54E5;&#x62C9;&#x65AF;&#x4E09;&#x5143;&#x6570;&#x7EC4;<b>&#x3002;&#x6700;&#x5C0F;&#x548C;&#x6700;&#x7B80;&#x5355;&#x7684;&#x4E09;&#x5143;&#x7EC4;&#x662F;(3&#x3001;4&#x3001;5)&#xFF0C;&#x8FD9;&#x79CD;&#x4E09;&#x5143;&#x7EC4;&#x6709;&#x65E0;&#x7A77;&#x591A;&#x3002;&#x81EA;&#x7136;&#x5730;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x7528;&#x4E00;&#x4E2A;&#x6B63;&#x6574;&#x6570;&#x6765;&#x7F29;&#x653E;&#x4F60;&#x7684;&#x4E09;&#x5143;&#x7EC4;&#x6765;&#x5F97;&#x5230;&#x65B0;&#x7684;&#x4E09;&#x5143;&#x7EC4;&#xFF0C;&#x6BD4;&#x5982;(6&#x3001;8&#x3001;10)&#x6216;&#x8005;(9&#x3001;12&#x3001;15)&#x6216;&#x8005;(300&#x3001;400&#x3001;500)&#xFF0C;&#x4F46;&#x662F;&#x6211;&#x4EEC;&#x60F3;&#x8981;&#x66F4;&#x591A;&#x6709;&#x8DA3;&#x7684;&#x4F8B;&#x5B50;&#x3002;&#x8FD9;&#x91CC;&#x6709;&#x4E00;&#x4E2A;&#x806A;&#x660E;&#x7684;&#x65B9;&#x6CD5;&#x6765;&#x521B;&#x5EFA;</b>&#x6BD5;&#x8FBE;&#x54E5;&#x62C9;&#x65AF;&#x4E09;&#x5143;&#x6570;&#x7EC4;<b>&#x3002;&#x9009;&#x62E9;&#x4EFB;&#x610F;&#x4E24;&#x4E2A;&#x6B63;&#x6570;m&#x548C;n&#xFF0C;m &gt; n&#xFF0C;&#x73B0;&#x5728;&#x4EE4;</b>
-        </p>
-        <p><b>a = m2 &#x2212; n2b = 2mnc = m2 + n2</b>
-        </p>
-        <p><b>&#x6CE8;&#x610F; a2 + b2 = (m2 &#x2212; n2)2 + (2mn)2 = m4 + 2m2n2 + n4</b>  <b>=</b>  <b>(m2 + n2)2 = c2&#x3002;&#x6240;&#x4EE5; (a, b, c) &#x662F;&#x4E00;&#x4E2A;</b>&#x6BD5;&#x8FBE;&#x54E5;&#x62C9;&#x65AF;&#x4E09;&#x5143;&#x6570;&#x7EC4;<b>&#x3002;&#x4F8B;&#x5982;&#xFF0C;&#x9009;&#x62E9;m = 2&#x3001;n = 1&#x5F97;&#x5230;(3, 4, 5)&#xFF1B;(m, n) = (3, 2)&#x5F97;&#x5230;(5, 12, 13)&#xFF1B;</b>  <b>(m, n) = (4, 1)&#x5F97;&#x5230;(15, 8, 17)&#xFF1B;(m, n) = (10, 7)&#x5F97;&#x5230;(51, 140, 149)&#x3002;&#x5C24;&#x5176;&#x503C;&#x5F97;&#x6CE8;&#x610F;&#x7684;&#x662F;(&#x5728;&#x6570;&#x8BBA;&#x7684;&#x4EFB;&#x4F55;&#x8BFE;&#x7A0B;&#x4E2D;&#x90FD;&#x80FD;&#x8BC1;&#x660E;)&#xFF0C;&#x6BCF;&#x4E00;&#x4E2A;&#x6BD5;&#x8FBE;&#x54E5;&#x62C9;&#x65AF;&#x4E09;&#x5143;&#x6570;&#x7EC4;&#x90FD;&#x53EF;&#x4EE5;&#x7531;&#x8FD9;&#x4E2A;&#x8FC7;&#x7A0B;&#x521B;&#x9020;&#x51FA;&#x6765;&#x3002;</b>
-        </p>
-      </th>
-    </tr>
-  </thead>
-  <tbody></tbody>
-</table>
+{% hint style="info" %}
+当正整数a、b、c满足 $$a^2 + b^2 = c^2$$ 时，我们称\(a, b, c\)毕达哥拉斯三元数组。最小和最简单的三元组是\(3、4、5\)，这种三元组有无穷多。自然地，你可以用一个正整数来缩放你的三元组来得到新的三元组，比如\(6、8、10\)或者\(9、12、15\)或者\(300、400、500\)，但是我们想要更多有趣的例子。这里有一个聪明的方法来创建毕达哥拉斯三元数组。选择任意两个正数m和n，m &gt; n，现在令
+
+$$a = m^2 − n^2b = 2mnc = m^2 + n^2$$ 
+
+注意 $$a^2 + b^2 = (m^2 − n^2)^2 + (2mn)^2 = m^4 + 2m^2n^2 + n^4 = (m^2 + n^2)^2 = c^2$$ 。所以 \(a, b, c\) 是一个毕达哥拉斯三元数组。例如，选择m = 2、n = 1得到\(3, 4, 5\)；\(m, n\) = \(3, 2\)得到\(5, 12, 13\)； \(m, n\) = \(4, 1\)得到\(15, 8, 17\)；\(m, n\) = \(10, 7\)得到\(51, 140, 149\)。尤其值得注意的是\(在数论的任何课程中都能证明\)，每一个毕达哥拉斯三元数组都可以由这个过程创造出来。
+{% endhint %}
 
 三角学的一切都是基于两个重要的函数：正弦函数和余弦函数。给定一个直角三角形ABC，如下图所示，我们让c表示斜边的长度，让a和b分别表示∠A和∠B对边的长度。
 
-![](file:///C:/Users/samuel/AppData/Local/Temp/msohtmlclip1/01/clip_image007.jpg)
+![](.gitbook/assets/image%20%28154%29.png)
 
-![](file:///C:/Users/samuel/AppData/Local/Temp/msohtmlclip1/01/clip_image009.jpg)
+$$
+sinA=a/c=\frac{opp}{hyp}\quad cosA=b/c=\frac{adj}{hyp}\quad tanA=a/b=\frac{opp}{adj}
+$$
 
 对于∠A（直角三角形中必然是锐角），我们将的∠A正弦记作sin A，定义为
 
-![](file:///C:/Users/samuel/AppData/Local/Temp/msohtmlclip1/01/clip_image011.jpg)
+$$
+sinA=\frac{a}{c}=\frac{∠A对边的长度}{斜边的长度}=\frac{opp}{hyp}
+$$
 
 类似的，我们定义∠A的余弦为
 
-![](file:///C:/Users/samuel/AppData/Local/Temp/msohtmlclip1/01/clip_image013.jpg)
+
+
+$$
+cosA=\frac{b}{c}=\frac{∠A临边的长度}{斜边的长度}=\frac{adj}{hyp}
+$$
 
 \(注意，拥有角∠A的任何直角三角形都与我们的三角形相似，并且各边都有相同的比例，所以∠A的正弦和余弦不取决于三角形的大小。\)
 
 在正弦和余弦之后，三角函数中最常用的函数是正切函数。我们将∠A的正切定义为
 
-![](file:///C:/Users/samuel/AppData/Local/Temp/msohtmlclip1/01/clip_image015.jpg)
+$$
+tanA=\frac{sinA}{cosA}
+$$
 
 在直角三角形中，我们有
 
-![](file:///C:/Users/samuel/AppData/Local/Temp/msohtmlclip1/01/clip_image017.jpg)
+$$
+tanA=\frac{sinA}{cosA}=\frac{a/c}{b/c}=\frac{a}{b}=\frac{∠A的对边}{∠A的临边}=\frac{opp}{adj}
+$$
 
 有很多记忆法可用于正弦、余弦和正切函数的公式的记忆。最受欢迎的是SOH CAH TOA。SOH提醒我们正弦是对边/斜边，对CAH和TOA也是一样。我的高中老师使用了这么一个助记法\(假设你按照正弦-余弦-正切的顺序\)，Oscar Has A Heap Of Apples \(oh-ah-oa\)。我的朋友们把这个修改成Olivia Has A Hairy Old Aunt！
 
-例如，在下面的3-4-5三角形中，我们有。
+例如，在下面的3-4-5三角形中，我们有
 
-![](file:///C:/Users/samuel/AppData/Local/Temp/msohtmlclip1/01/clip_image019.jpg)
+$$
+sinA=\frac{3}{5}\quad cosA=\frac{4}{5}\quad tanA=\frac{3}{3}
+$$
 
-![](file:///C:/Users/samuel/AppData/Local/Temp/msohtmlclip1/01/clip_image021.jpg)
-
-3-4-5三角形中 sin A = 3/5, cos A = 4/5, tan A = 3/4
+![3-4-5&#x4E09;&#x89D2;&#x5F62;&#x4E2D; sin A = 3/5, cos A = 4/5, tan A = 3/4](.gitbook/assets/image%20%28164%29.png)
 
 对同一个三角形中的 ∠B，结果是什么样的呢？如果我们计算它的正弦和余弦，我们看到
 
-![](file:///C:/Users/samuel/AppData/Local/Temp/msohtmlclip1/01/clip_image023.jpg)
+$$
+sinB=\frac{4}{5}=cosA\quad cosB=\frac{3}{5}=sinA
+$$
 
 我们得到 sinB = cosA和cosB = sinA。这并非巧合，因为对任意的∠A，另外一个锐角会改变它所认为的对边和邻边，但它们仍然会有相同的斜边。因为∠A + ∠B = 90º ，所以对任意锐角我们得到
 
-sin\(90° − A\) = cosA cos\(90° − A\) = sinA
+$$sin(90° − A) = cosA cos(90° − A) = sinA$$ 
 
-例如，如果一个三角形ABC的∠A = 40º，那么它的余角∠B = 50º就有sin50° = cos40° and cos50° = sin40°。换句话，余角和余弦等于正弦（这也是为什么余弦被写成cosine的原因）。
+例如，如果一个三角形ABC的∠A = 40º，那么它的余角∠B = 50º就有sin50° = cos40° 和 cos50° = sin40°。换句话，余角和余弦等于正弦（这也是为什么余弦被写成cosine的原因）。
 
 还有其它三个函数应该是三角词汇的一部分，但是它们不会像前三个函数那样常用。它们是正割、余割和正切函数，它们被定义为
+
+$$
+secA=\frac{1}{cosA}\quad cscA=\frac{1}{sinA}\quad cotA=\frac{1}{tanA}
+$$
 
 ![](file:///C:/Users/samuel/AppData/Local/Temp/msohtmlclip1/01/clip_image025.jpg)
 
@@ -110,13 +117,11 @@ sin\(90° − A\) = cosA cos\(90° − A\) = sinA
 
 不需要借助计算器就可以知道一些三角函数值。回想一下，一个30-60-90三角形的边与前面所示成比例。因此
 
-![](file:///C:/Users/samuel/AppData/Local/Temp/msohtmlclip1/01/clip_image027.jpg)
+$$sin30°=1/2\quad sin60°=\sqrt{3}/2 \\ cos30°=\sqrt{3}/2\quad cos60°=1/2$$ 
 
-![](file:///C:/Users/samuel/AppData/Local/Temp/msohtmlclip1/01/clip_image029.jpg)
+因为45-45-90三角形的边和边成比例
 
-因为45-45-90三角形的边和边成比例。
-
-![](file:///C:/Users/samuel/AppData/Local/Temp/msohtmlclip1/01/clip_image031.jpg)
+$$sin45°=cos45°=1/\sqrt{2}=\sqrt{2}/2$$ 
 
 因为，我认为不需要记住tan函数的任何值，除非tan45° = 1，而tan90°没有定义，因为cos90° = 0。
 
@@ -124,25 +129,21 @@ sin\(90° − A\) = cosA cos\(90° − A\) = sinA
 
 假设你站在离树10英尺的地方，从地面到树顶的角度是50°。顺便说一下，大多数智能手机都有测量角度的应用程序。你可以使用量角器、吸管和回形针这些较原始工具来创建一个功能角度测量器，称为测斜仪。
 
-![](file:///C:/Users/samuel/AppData/Local/Temp/msohtmlclip1/01/clip_image033.jpg)
-
-这棵树有多高？
+![&#x8FD9;&#x68F5;&#x6811;&#x6709;&#x591A;&#x9AD8;&#xFF1F;](.gitbook/assets/image%20%28158%29.png)
 
 用h代表树的高度。则h = 10 tan50°，根据计算器的结果10\(1.19 . . .\) ≈ 11.9，所以树高11.9英尺。
 
-![](file:///C:/Users/samuel/AppData/Local/Temp/msohtmlclip1/01/clip_image035.jpg)
+$$tan50°=\frac{h}{10}$$ 
 
 我们现在准备用我们的第一个数学方法来回答这个问题。我们面临的挑战是我们不知道我们到山的中心的距离。基本上我们有两个未知数\(山的高度和离我们的距离\)，所以我们收集了两条信息。假设我们测量从我们的位置到山顶的角度，发现角度是40°，然后移动1000英尺远的距离，然后发现角度现在是32°。让我们用这些信息来估计这座山的大小。
 
 **方法4\(切线法\)：**用h表示山的高度，令x为与山的中心的初始距离\(x为CD的长度\)。看一下直角三角形BCD，我们计算 tan40° ≈ 0.839。
 
-![](file:///C:/Users/samuel/AppData/Local/Temp/msohtmlclip1/01/clip_image037.jpg)
+$$tan40°\approx0.839=\frac{h}{x}$$ 
 
-这里隐含着h = 0.839x。通过三角形ABC，我们得到
+这里隐含着h = 0.839x。通过三角形ABC，我们得到 $$tan32°\approx0.625=\frac{h}{x+1000}$$ 。
 
-![](file:///C:/Users/samuel/AppData/Local/Temp/msohtmlclip1/01/clip_image039.jpg)
-
-![](file:///C:/Users/samuel/AppData/Local/Temp/msohtmlclip1/01/clip_image041.jpg)
+![](.gitbook/assets/image%20%28157%29.png)
 
 所以h = 0.625\(x + 1000\) = 0.625x + 625**。**
 
@@ -152,184 +153,145 @@ sin\(90° − A\) = cosA cos\(90° − A\) = sinA
 
 最终的解是x = 625/\(0.214\) ≈ 2920。因此h近似等于0.839\(2920\) = 2450，所以山的高度大约是2450英尺。
 
-三角函数和圆
+## 三角函数和圆
 
 到目前为止，我们已经用一个直角三角形定义了三角函数，我强烈建议你们接受这个定义意。然而，这个定义有一个缺点，它只允许我们为0°和90°之间的角\(因为直角三角形总是包含一个90°角和两个锐角\)找到正弦、余弦和正切值。在这一节中，我们用单位圆来定义三角函数，它可以让我们找到任何角度的正弦、余弦和切线。
 
-回忆一下，单位圆是以原点\(0,0\)为圆心，半径为1的圆，它有方程 x2 + y2 = 1，这是我们在上一章用勾股定理推导出来的。假设我要求你从点\(1，0\)开始，的逆时针方向在单位圆上找到锐角A对应的点\(x, y\)，如下图所示。
+回忆一下，单位圆是以原点\(0,0\)为圆心，半径为1的圆，它有方程 $$x^2 + y^2 = 1$$ ，这是我们在上一章用勾股定理推导出来的。假设我要求你从点\(1，0\)开始，的逆时针方向在单位圆上找到锐角A对应的点\(x, y\)，如下图所示。
 
-![](file:///C:/Users/samuel/AppData/Local/Temp/msohtmlclip1/01/clip_image043.jpg)
-
-单位圆上的点\(x, y\) 对应于角A，而x = cosA、y = sinA。
+![&#x5355;&#x4F4D;&#x5706;&#x4E0A;&#x7684;&#x70B9;\(x, y\) &#x5BF9;&#x5E94;&#x4E8E;&#x89D2;A&#xFF0C;&#x800C;x = cosA&#x3001;y = sinA](.gitbook/assets/image%20%28166%29.png)
 
 我们可以通过画一个直角三角形来找到x和y，并应用我们的余弦和正弦公式。具体地说
 
-![](file:///C:/Users/samuel/AppData/Local/Temp/msohtmlclip1/01/clip_image045.jpg)
-
-![](file:///C:/Users/samuel/AppData/Local/Temp/msohtmlclip1/01/clip_image047.jpg)
+$$\begin{aligned} cosA=\frac{adj}{hyp}=\frac{x}{1}=x \\ sinA=\frac{opp}{hyp}=\frac{y}{1}=y \end{aligned}$$ 
 
 换句话说，点\(x, y\)等于\(cosA, sinA\)\(更一般地说，如果圆的半径是r，那么\(x，y\) = \(r cosA, rsinA\)\)
 
 对于任何一个角A，我们可以扩展之前的想法，将\(cosA，sinA\)定义为单位圆上的点。换句话说，cosA是点的x坐标，sinA是y坐标。
 
-![](file:///C:/Users/samuel/AppData/Local/Temp/msohtmlclip1/01/clip_image049.jpg)
-
-cosA和sinA的一般定义
+![cosA&#x548C;sinA&#x7684;&#x4E00;&#x822C;&#x5B9A;&#x4E49;](.gitbook/assets/image%20%28160%29.png)
 
 另一张图中，我们把单位圆按30°的粒度分割\(另外增添45°\)，因为这些角对应于我们之前看到的特殊三角形的角。我们已经列出了0°、30°、45°、60°和90°的余弦和正弦值。具体地说
 
-![](file:///C:/Users/samuel/AppData/Local/Temp/msohtmlclip1/01/clip_image051.jpg)
+$$\begin{aligned} (cos0°,\ sin0°) &= (1,\ 0) \\ (cos30°,\ sin30°) &= (\frac{\sqrt{3}}{2},\ \frac{1}{2}) \\ (cos45°,\ sin45°) &= (\frac{\sqrt{2}}{2},\ \frac{\sqrt{2}}{2}) \\ (cos60°,\ sin60°) &= (\frac{1}{2},\ \frac{\sqrt{3}}{2}) \\ (cos90°,\ sin90°) &= (0,\ 1) \\ \end{aligned}$$ 
 
 我们可以看到，这些角的倍数可以通过反映第一象限的值来计算。
 
-![](file:///C:/Users/samuel/AppData/Local/Temp/msohtmlclip1/01/clip_image053.jpg)
+![](.gitbook/assets/image%20%28162%29.png)
 
 因为增加或减少360°并不会改变一个角（字面意思是绕一个圆），所以对任意角A
 
-sin\(A ± 360°\) = sin Acos\(A ± 360°\) = cos A
+$$sin(A ± 360°) = sin Acos(A ± 360°) = cos A$$ 
 
 一个负角沿顺时针方向移动。例如-30°和330°相同。注意，当你沿着顺时针方向移动一个角度时，你得到的x坐标和逆时针方向上移动相同角度是一样的，但是y坐标会有相反的符号。换句话说，对于任意角A。
 
-cos\(−A\) = cos Asin\(−A\) = − sin A
+$$cos(−A) = cos Asin(−A) = − sin A$$ 
 
 例如
 
-![](file:///C:/Users/samuel/AppData/Local/Temp/msohtmlclip1/01/clip_image055.jpg)
+$$cos(-30°)=cos30°=\sqrt{3}/2\quad\quad sin(-30°)=-sin(30°)=-1/2$$ 
 
 当我们在y轴上做角A的镜像时，我们得到了补充角180 - A，这使得单位圆上的y值不变，但x值是负的。换句话说
 
-cos\(180 − A\) = − cosA sin\(180 − A\) = sinA
+$$cos(180 − A) = − cosA sin(180 − A) = sinA$$ 
 
 例如当A = 30°,
 
-![](file:///C:/Users/samuel/AppData/Local/Temp/msohtmlclip1/01/clip_image057.jpg)
+$$cos150°=-cos30°=-\sqrt{3}/2\quad\quad sin150°=sin30°=1/2$$ 
 
 我们继续定义其它的三角函数，比如，tanA = sinA/cosA。
 
 x轴和y轴把平面分成四个象限。我们称这些象限为i、ii、iii和iv，象限i处在0°到90°之间；象限ii在90°到180°之间；象限iii在180°到270°之间；象限iv在270°到360°之间。注意，正弦在象限i和ii中是正的，余弦在象限i和iv中是正的，因此正切在象限i和iii中是正的。有些学生使用助记符All Students Take Calculus（所有学生都用微积分，A全部, S正弦, T正切, C余弦）来记住在每个象限中，哪些三角函数是正的。
 
-最后一个值得学习的词汇是反三角函数，它对于确定未知的角度很有用。例如，1/2的反正弦，表示为sin-1\(1/2\)，它告诉我们有一个角A，其正弦值sinA = 1/2。我们知道sin30° = 1/2，所以。
+最后一个值得学习的词汇是反三角函数，它对于确定未知的角度很有用。例如，1/2的反正弦，表示为 $$sin^{-1}(1/2)$$ ，它告诉我们有一个角A，其正弦值 $$sinA = 1/2$$ 。我们知道 $$sin30° = 1/2$$ ，所以 $$sin^{−1}(1/2) = 30°$$ 。
 
-sin−1\(1/2\) = 30°
-
-函数sin-1\(也称为arcsin\)总是在-90°和90°之间给出一个角度，但是要注意，在这个区间之外还有其他的角度，它们的正弦值相同。例如，sin150° = 1/2，将360°的任意倍数加到30°或150°，也会得到同样的值。
+函数 $$sin^{-1}$$ \(也称为arcsin\)总是在-90°和90°之间给出一个角度，但是要注意，在这个区间之外还有其他的角度，它们的正弦值相同。例如，sin150° = 1/2，将360°的任意倍数加到30°或150°，也会得到同样的值。
 
 对于3-4-5三角形，我们的计算器可以通过三种不同的反三角函数来确定角A。
 
-∠A = sin−1 \(3/5\) = cos−1 \(4/5\) = tan−1\(3/4\) ≈ 36.87º ≈ 37º
+$$∠A = sin^{−1} (3/5) = cos^{−1} (4/5) = tan^{−1}(3/4) ≈ 36.87º ≈ 37º$$ 
 
-![](file:///C:/Users/samuel/AppData/Local/Temp/msohtmlclip1/01/clip_image059.jpg)
+![](.gitbook/assets/image%20%28165%29.png)
 
-反三角函数可以从边长确定角度。因为 A = \(3/4\), ∠A = tan−1 \(3/4\) ≈ 37º。
+反三角函数可以从边长确定角度。因为 A = \(3/4\), $$∠A = tan^{−1} (3/4) ≈ 37º$$ 。
 
 是时候把这些三角函数运用起来了。在几何中，知道直角三角形的直角边后，我们可以通过勾股定理计算斜边的长度。在三角学中，我们可以用余弦定理对任意三角形进行类似的计算。
 
-**余弦定理：**对于任意三角形ABC，∠C两邻边的长度为a和b，则长度c的第三边满足
-
-c2 = a2 + b2 − 2ab cos C
+**余弦定理：**对于任意三角形ABC，∠C两邻边的长度为a和b，则长度c的第三边满足 $$c^2 = a^2 + b^2 − 2ab cos C$$ 。
 
 例如，在下面的三角形中，三角形ABC的边长为21和26的夹角是15°。根据余弦定理，第三条边的长度c必须满足。
 
-c2 = 212 + 262 − 2\(21\)\(26\) cos 15°
+$$c^2 = 21^2 + 26^2 − 2(21)(26) cos 15°$$ 
 
-因为15° ≈ 0.9659，等式可以简化为c2 = 62.21，所以c ≈ 7.89。
+因为15° ≈ 0.9659，等式可以简化为 $$c^2 = 62.21$$ ，所以c ≈ 7.89。
 
-![](file:///C:/Users/samuel/AppData/Local/Temp/msohtmlclip1/01/clip_image061.jpg)
+![](.gitbook/assets/image%20%28156%29.png)
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">
-        <p><b>&#x65C1;&#x767D;</b>
-        </p>
-        <p><b>&#x8BC1;&#x660E;&#xFF1A;</b>&#x4E3A;&#x4E86;&#x8BC1;&#x660E;&#x4F59;&#x5F26;&#x5B9A;&#x7406;&#xFF0C;&#x6211;&#x4EEC;&#x8003;&#x8651;&#x4E09;&#x79CD;&#x60C5;&#x51B5;&#xFF0C;&#x8FD9;&#x53D6;&#x51B3;&#x4E8E;&#x2220;C
-          &#x662F;&#x76F4;&#x89D2;&#x3001;&#x9510;&#x89D2;&#x8FD8;&#x662F;&#x949D;&#x89D2;&#x3002;&#x5982;&#x679C;&#x2220;C
-          &#x662F;&#x4E00;&#x4E2A;&#x76F4;&#x89D2;&#xFF0C;&#x90A3;&#x4E48;cosC =
-          cos90&#xB0; = 0&#xFF0C;&#x6240;&#x4EE5;&#x4F59;&#x5F26;&#x5B9A;&#x7406;&#x5C31;&#x662F;&#xFF0C;c2
-          = a2 + b2&#xFF0C;&#x8FD9;&#x662F;&#x5DF2;&#x7ECF;&#x8BC1;&#x660E;&#x4E86;&#x7684;&#x52FE;&#x80A1;&#x5B9A;&#x7406;&#x3002;</p>
-        <p>
-          <img src="file:///C:/Users/samuel/AppData/Local/Temp/msohtmlclip1/01/clip_image063.jpg"
-          alt/>
-        </p>
-        <p>&#x5982;&#x679C;&#x2220;C &#x662F;&#x9510;&#x89D2;&#x3002;&#x4ECE;B&#x70B9;&#x753B;&#x4E00;&#x6761;&#x5782;&#x7EBF;&#xFF0C;&#x5728;D&#x70B9;&#x5904;&#x4E0E;AC&#x76F8;&#x4EA4;&#xFF1B;&#x8FD9;&#x5C06;ABC&#x5206;&#x5272;&#x6210;&#x4E24;&#x4E2A;&#x76F4;&#x89D2;&#x4E09;&#x89D2;&#x5F62;&#x3002;&#x5BF9;CBD&#x5E94;&#x7528;&#x52FE;&#x80A1;&#x5B9A;&#x7406;&#xFF0C;&#x6211;&#x4EEC;&#x6709;a2
-          = h2 + x2&#xFF0C;&#x56E0;&#x6B64;h2 = a2 &#x2212; x2</p>
-        <p>&#x5BF9;&#x4E09;&#x89D2;&#x5F62;ABD&#xFF0C;&#x6211;&#x4EEC;&#x5F97;&#x5230;c2
-          = h2 + (b &#x2212; x)2 = h2 + b2 &#x2212; 2bx + x2&#xFF0C;&#x6240;&#x4EE5;h2
-          = c2 &#x2212; b2 + 2bx &#x2212; x2</p>
-        <p>&#x5C06;h&#xB2;&#x7684;&#x503C;&#x8BBE;&#x4E3A;&#x76F8;&#x7B49;</p>
-        <p>c2 &#x2212; b2 + 2bx &#x2212; x2 = a2 &#x2212; x2</p>
-        <p>&#x4ECE;&#x800C;</p>
-        <p>c2 = a2 + b2 &#x2212; 2bx</p>
-        <p>&#x4ECE;&#x53F3;&#x8FB9;&#x7684;&#x76F4;&#x89D2;&#x4E09;&#x89D2;&#x5F62;CBD&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x770B;&#x51FA;
-          cosC = x/a,&#xFF0C;&#x6240;&#x4EE5;x = acosC&#x3002;&#x8FD9;&#x6837;&#x5F53;&#x2220;C&#x662F;&#x9510;&#x89D2;&#x65F6;&#xFF0C;</p>
-        <p>c2 = a2 + b2 &#x2212; 2ab cos C</p>
-        <p>&#x5F53;&#x2220;C&#x662F;&#x949D;&#x89D2;&#x65F6;&#xFF0C;&#x6211;&#x4EEC;&#x5728;&#x4E09;&#x89D2;&#x5F62;&#x7684;&#x5916;&#x9762;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x76F4;&#x89D2;&#x4E09;&#x89D2;&#x5F62;CBD&#xFF0C;&#x5982;&#x56FE;&#x6240;&#x793A;&#x3002;</p>
-        <p>
-          <img src="file:///C:/Users/samuel/AppData/Local/Temp/msohtmlclip1/01/clip_image065.jpg"
-          alt/>
-        </p>
-        <p>&#x5728;&#x76F4;&#x89D2;&#x4E09;&#x89D2;&#x5F62;CBD&#x548C;ABD&#x4E2D;&#xFF0C;&#x6839;&#x636E;&#x52FE;&#x80A1;&#x5B9A;&#x7406;&#x5F97;&#x5230;
-          a2 = h2 + x2 &#x548C; c2 = h2 + (b + x)2&#x3002;&#x4EE4;h2&#x76F8;&#x7B49;&#xFF0C;&#x5F97;&#x5230;</p>
-        <p>c2 = a2 + b2 + 2bx</p>
-        <p>&#x8FD9;&#x4E00;&#x6B21;&#xFF0C;&#x4E09;&#x89D2;&#x5F62;CBD&#x544A;&#x8BC9;&#x6211;&#x4EEC;cos(180&#xB0;
-          &#x2212; C) = x/a&#xFF0C;&#x6240;&#x4EE5;x = a cos(180&#xB0; &#x2212; C)
-          = &#x2212;acos C&#x3002;&#x6240;&#x4EE5;&#xFF0C;&#x6211;&#x4EEC;&#x518D;&#x4E00;&#x6B21;&#x5F97;&#x5230;&#x6211;&#x4EEC;&#x60F3;&#x8981;&#x7684;&#x7ED3;&#x679C;</p>
-        <p>c2 = a2 + b2 &#x2212; 2ab cos C</p>
-        <p>&#x263A;</p>
-      </th>
-    </tr>
-  </thead>
-  <tbody></tbody>
-</table>
+{% hint style="info" %}
+**证明：**为了证明余弦定理，我们考虑三种情况，这取决于∠C 是直角、锐角还是钝角。如果∠C 是一个直角，那么cosC = cos90° = 0，所以余弦定理就是， $$c^2 = a^2 + b^2$$ ，这是已经证明了的勾股定理。
+
+![](.gitbook/assets/image%20%28161%29.png) 
+
+如果∠C 是锐角。从B点画一条垂线，在D点处与AC相交；这将ABC分割成两个直角三角形。对CBD应用勾股定理，我们有 $$a^2 = h^2 + x^2$$ ，因此 $$h^2 = a^2 − x^2$$ 。
+
+对三角形ABD，我们得到 $$c^2 = h^2 + (b − x)^2 = h^2 + b^2 − 2bx + x^2$$ ，所以 $$h^2 = c^2 − b^2 + 2bx − x^2$$ 。
+
+将h²的值设为相等
+
+$$c^2 − b^2 + 2bx − x^2 = a^2 − x^2$$ 
+
+从而
+
+$$c^2 = a^2 + b^2 − 2bx$$ 
+
+从右边的直角三角形CBD，我们可以看出 cosC = x/a,，所以x = acosC。这样当∠C是锐角时，
+
+$$c^2 = a^2 + b^2 − 2ab cos C$$ 
+
+当∠C是钝角时，我们在三角形的外面创建一个直角三角形CBD，如图所示。
+
+![](.gitbook/assets/image%20%28163%29.png) 
+
+在直角三角形CBD和ABD中，根据勾股定理得到 $$a^2 = h^2 + x^2 $$ 和 $$c^2 = h^2 + (b + x)^2$$ 。令 $$h^2$$ 相等，得到 $$c^2 = a^2 + b^2 + 2bx$$ 。
+
+这一次，三角形CBD告诉我们 $$cos(180° − C) = x/a$$ ，所以 $$x = a cos(180° − C) = −acos C$$ 。所以，我们再一次得到我们想要的结果 $$c^2 = a^2 + b^2 − 2ab cos C$$ 。
+
+                                                                                                                                                                    ☺
+{% endhint %}
 
 顺便说一下，有个很好的公式可以用来求三角形的面积。
 
-**推论：**对任意三角形ABC，已知两边长a和b，以及它们的夹角∠C，其面积为
+**推论：**对任意三角形ABC，已知两边长a和b，以及它们的夹角∠C，其面积为 $$½absinC$$ 。
 
-½absinC
-
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">
-        <p><b>&#x65C1;&#x767D;</b>
-        </p>
-        <p><b>&#x8BC1;&#x660E;&#xFF1A;</b>&#x5E95;&#x4E3A;b&#x3001;&#x9AD8;&#x4E3A;h&#x7684;&#x4E09;&#x89D2;&#x5F62;&#x7684;&#x9762;&#x79EF;&#x4E3A;&#xBD;hb&#x3002;&#x5728;&#x4F59;&#x5F26;&#x5B9A;&#x7406;&#x7684;&#x6240;&#x6709;&#x4E09;&#x4E2A;&#x8BC1;&#x660E;&#x4E2D;&#xFF0C;&#x4E09;&#x89D2;&#x5F62;&#x6709;&#x4E00;&#x4E2A;&#x5E95;b&#xFF1B;&#x73B0;&#x5728;&#x6211;&#x4EEC;&#x6765;&#x786E;&#x5B9A;h&#xFF0C;&#x5728;&#x9510;&#x89D2;&#x7684;&#x4F8B;&#x5B50;&#x4E2D;&#xFF0C;sinC
-          = h/a&#xFF0C;&#x6240;&#x4EE5;h = asinC&#xFF1B;&#x5728;&#x949D;&#x89D2;&#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x6709;sin&#xFF08;180&#xB0;&#xFF0D;C&#xFF09;=
-          h/a&#xFF0C;&#x6240;&#x4EE5;h=asin180 &#xFF0D; C&#xFF09;= asinC&#xFF0C;&#x548C;&#x4E4B;&#x524D;&#x4E00;&#x6837;&#x3002;&#x5728;&#x76F4;&#x89D2;&#x7684;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;h
-          = a&#xFF0C;&#x5B83;&#x7B49;&#x4E8E;asinC&#xFF0C;&#x56E0;&#x4E3A;C = 90&#xB0;&#xFF0C;&#x6240;&#x4EE5;sin90&#xB0;
-          = 1&#x3002;&#x56E0;&#x6B64;&#xFF0C;&#x7531;&#x4E8E;&#x5728;&#x8FD9;&#x4E09;&#x79CD;&#x60C5;&#x51B5;&#x4E0B;&#x90FD;&#x662F;h
-          = asinC&#xFF0C;&#x6240;&#x4EE5;&#x4E09;&#x89D2;&#x5F62;&#x7684;&#x9762;&#x79EF;&#x662F;&#xBD;ahsinC&#x3002;</p>
-        <p>&#x25A1;</p>
-      </th>
-    </tr>
-  </thead>
-  <tbody></tbody>
-</table>
+{% hint style="info" %}
+**证明：**底为b、高为h的三角形的面积为½hb。在余弦定理的所有三个证明中，三角形有一个底b；现在我们来确定h，在锐角的例子中，sinC = h/a，所以h = asinC；在钝角中，我们有sin（180°－C）= h/a，所以h=asin（180 － C）= asinC，和之前一样。在直角的情况下，h = a，它等于asinC，因为C = 90°，所以sin90° = 1。因此，由于在这三种情况下都是h = asinC，所以三角形的面积是½ahsinC。
+{% endhint %}
 
 作为这个推论的结果，请注意
 
-![](file:///C:/Users/samuel/AppData/Local/Temp/msohtmlclip1/01/clip_image067.png)
+$$
+sinC=\frac{2(三角形ABC的面积）}{ab}
+$$
 
 所以
 
-![](file:///C:/Users/samuel/AppData/Local/Temp/msohtmlclip1/01/clip_image069.png)
+$$
+\frac{sinC}{c}=\frac{2(三角形ABC的面积)}{abc}
+$$
 
 换句话说，对于三角形ABC，（sinC）/c是ABC的面积除以它所有边的结果的两倍。但是在这个表述中，角C没有什么特别之处。对\(sin B\)/b或者\(sin A\)/a我们会得到相同的结论。因此，我们刚刚证明了以下非常有用的定理。
 
 **定理（正弦定理）：**对于任何边长为a、b、c的三角形ABC
 
-![](file:///C:/Users/samuel/AppData/Local/Temp/msohtmlclip1/01/clip_image071.png)
+$$\frac{sinA}{a}=\frac{sinB}{b}=\frac{sinC}{c}$$ 
 
 等效于
 
-![](file:///C:/Users/samuel/AppData/Local/Temp/msohtmlclip1/01/clip_image073.png)
+$$\frac{a}{sinA}=\frac{b}{sinB}=\frac{c}{sinC}$$ 
 
 我们可以用正弦定理来确定山的高度。这一次，我们关注的是，我们最初到达山顶的距离，就像下图一样。
 
-![](file:///C:/Users/samuel/AppData/Local/Temp/msohtmlclip1/01/clip_image075.png)
-
-用正弦定理找到山的高度
+![&#x7528;&#x6B63;&#x5F26;&#x5B9A;&#x7406;&#x627E;&#x5230;&#x5C71;&#x7684;&#x9AD8;&#x5EA6;](.gitbook/assets/image%20%28167%29.png)
 
 **方法5（正弦定理）：**在三角形ABD中，∠BAD=32°，∠BDA = 180° － 40°，因此∠ABD = 8°。把正弦定理应用到这个三角形中，我们有
 
