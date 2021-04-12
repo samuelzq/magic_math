@@ -295,239 +295,165 @@ $$\frac{a}{sinA}=\frac{b}{sinB}=\frac{c}{sinC}$$
 
 **方法5（正弦定理）：**在三角形ABD中，∠BAD=32°，∠BDA = 180° － 40°，因此∠ABD = 8°。把正弦定理应用到这个三角形中，我们有
 
-![](file:///C:/Users/samuel/AppData/Local/Temp/msohtmlclip1/01/clip_image077.png)
+$$
+\frac{a}{sin32°}=\frac{1000}{sin8°}
+$$
 
-两边乘以sin32°，我们得到a = 1000 sin32°/sin 8° ≈ 3808英尺。接下来，因为sin40° ≈ 6428 = h/a，所以
+两边乘以 $$\sin32°$$ ，我们得到 $$a = 1000 \sin32°/\sin 8° ≈ 3808$$ 英尺。接下来，因为 $$\sin40° ≈ 6428 = h/a$$ ，所以
 
-h = asin40° ≈ \(3808\)\(0.6428\) = 2448
+$$
+h = a \cdot \sin40° ≈ (3808)(0.6428) = 2448
+$$
 
 所以这座山大约有2450英尺高，这和我们之前的答案是一致的。
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">
-        <p><b>&#x65C1;&#x767D;</b>
-        </p>
-        <p>&#x8FD9;&#x662F;&#x53E6;&#x4E00;&#x4E2A;&#x503C;&#x5F97;&#x77E5;&#x9053;&#x7684;&#x516C;&#x5F0F;&#xFF0C;&#x5B83;&#x88AB;&#x53EB;&#x505A;&#x6D77;&#x4F26;&#x516C;&#x5F0F;&#xFF0C;&#x5B83;&#x544A;&#x8BC9;&#x6211;&#x4EEC;&#x5982;&#x4F55;&#x6839;&#x636E;&#x4E09;&#x89D2;&#x5F62;&#x8FB9;&#x957F;a&#x3001;b&#x548C;c&#x6C42;&#x5B83;&#x7684;&#x9762;&#x79EF;&#xFF0C;&#x8FD9;&#x4E2A;&#x516C;&#x5F0F;&#x5F88;&#x7B80;&#x5355;&#x3002;&#x4E00;&#x65E6;&#x4F60;&#x8BA1;&#x7B97;&#x4E86;&#x534A;&#x5468;&#x957F;</p>
-        <p>
-          <img src="file:///C:/Users/samuel/AppData/Local/Temp/msohtmlclip1/01/clip_image079.png"
-          alt/>
-        </p>
-        <p>&#x4FBF;&#x53EF;&#x901A;&#x8FC7;&#x6D77;&#x4F26;&#x516C;&#x5F0F;&#x6C42;&#x51FA;&#x5B83;&#x7684;&#x9762;&#x79EF;</p>
-        <p>
-          <img src="file:///C:/Users/samuel/AppData/Local/Temp/msohtmlclip1/01/clip_image081.png"
-          alt/>
-        </p>
-        <p>&#x4F8B;&#x5982;&#xFF0C;&#x4E00;&#x4E2A;&#x4E09;&#x89D2;&#x5F62;&#x7684;&#x8FB9;&#x957F;&#x662F;3,
-          14, 15&#xFF08;&#x3C0;&#x7684;&#x524D;5&#x4E2A;&#x6570;&#x5B57;&#xFF09;&#x3002;&#x5B83;&#x7684;&#x534A;&#x5468;&#x957F;&#x4E3A;s
-          = (3 + 14 + 15)/2 = 16&#x3002;&#x8FD9;&#x6837;&#x5B83;&#x7684;&#x9762;&#x79EF;&#x662F;</p>
-        <p>
-          <img src="file:///C:/Users/samuel/AppData/Local/Temp/msohtmlclip1/01/clip_image083.png"
-          alt/>
-        </p>
-        <p>&#x6D77;&#x4F26;&#x516C;&#x5F0F;&#x7684;&#x8BC1;&#x660E;&#x9700;&#x8981;&#x7528;&#x5230;&#x4F59;&#x5F26;&#x5B9A;&#x7406;&#x3002;</p>
-      </th>
-    </tr>
-  </thead>
-  <tbody></tbody>
-</table>
+{% hint style="info" %}
+这是另一个值得知道的公式，它被叫做海伦公式，它告诉我们如何根据三角形边长a、b和c求它的面积，这个公式很简单。一旦你计算了半周长
 
-三角恒等式
+$$s=\frac{a+b+c}{2}$$ 
+
+便可通过海伦公式求出它的面积
+
+$$\sqrt{s(s-a)(s-b)(s-c)}$$ 
+
+例如，一个三角形的边长是3, 14, 15（π的前5个数字）。它的半周长为 $$s = (3 + 14 + 15)/2 = 16$$ 。这样它的面积是
+
+$$\sqrt{16(16-3)(16-14)(16-15)}=\sqrt{416} \approx{20.4}$$ 
+
+海伦公式的证明需要用到余弦定理。
+{% endhint %}
+
+## 三角恒等式
 
 三角函数满足许多有趣的关系，称为恒等式。我们已经见过一些这样的例子了
 
-sin\(−A\) = − sin Acos\(−A\) = cos A
+$$\sin(−A) = − \sin A \quad cos(−A) = \cos A$$ 
 
 但是还有其它一些有趣的恒等式能推导出有用的方程，我们将在本节中探讨。第一个恒等式来自于单位圆方程：
 
-x2 + y2 = 1
+$$x^2 + y^2 = 1$$ 
 
-因为点（cos A, sin A）在单位元上，所以它必须满足这一关系，因此\(cos A\)2 + \(sin A\)2 = 1。这也许是最重要的三角恒等式。
+因为点 $$（\cos A, \ \sin A）$$ 在单位元上，所以它必须满足这一关系，因此 $$(\cos A)^2 + (\sin A)^2 = 1$$ 。这也许是最重要的三角恒等式。
 
-**定理：**对任意角A
+**定理：**对任意角A， $$\cos^2A + \sin^2A = 1$$ 。
 
-cos2A + sin2A = 1
+到目前为止，我们主要使用字母A来表示任意角度，但这个字母并没有什么特别之处。上面的恒等式通常用其它字母表示。例如， $$\cos^2x + \sin^2x = 1$$ 。
 
-到目前为止，我们主要使用字母A来表示任意角度，但这个字母并没有什么特别之处。上面的恒等式通常用其它字母表示。例如,
-
-cos2x + sin2x = 1
-
-希腊字母θ（theta）是另外一个通用的选择
-
-cos2θ + sin2θ = 1
+希腊字母θ（theta）是另外一个通用的选择 $$\cos^2θ + sin^2θ = 1$$ 。
 
 有时我们只是简单地引用这个恒等式，而没有任何变量。例如，我们可以把这个定理缩写为
 
-cos2 + sin2 = 1
+$$
+cos^2 + sin^2 = 1
+$$
 
 在证明其它恒等式之前，我们先用勾股定理来计算线段的长度。这将是证明我们的第一个恒等式份的关键，它本身就是一个有用的结果。
 
-**定理（距离公式）：**令L是点（x1，y1）和（x2，y2）之间的距离。则
+**定理（距离公式）：**令L是点 $$（x_1，y_1）$$ 和 $$（x_2，y_2）$$ 之间的距离。则
 
-![](file:///C:/Users/samuel/AppData/Local/Temp/msohtmlclip1/01/clip_image085.jpg)
+$$
+L=\sqrt{(x_2-x_1)^2+(y_2-y_1)2}
+$$
 
 例如，点（-2,3）和点（5,8）之间的线段长度为
 
-![](file:///C:/Users/samuel/AppData/Local/Temp/msohtmlclip1/01/clip_image087.jpg)
+$$
+\sqrt{(5-(-2))^2+(8-3)^2}=\sqrt{7^2+5^2}=\sqrt{74}\approx{8.6}
+$$
 
-![](file:///C:/Users/samuel/AppData/Local/Temp/msohtmlclip1/01/clip_image089.jpg)
+![&#x6839;&#x636E;&#x52FE;&#x80A1;&#x5B9A;&#x7406;L&#xB2; = \(x2-x1\)&#xB2; + \(y2-y1\)&#xB2;](.gitbook/assets/image%20%28174%29.png)
 
-根据勾股定理L2 = \(x2 − x1\)2 + \(y2 − y1\)2
+**证明：**考虑上图中的两点 $$(x_1, \ y_1)$$ 和 $$(x_2,\  y_2) $$ 。做一个直角三角形，令线段是该直角三角形的斜边。在我们的图形中，三角形的底是 $$x_2 − x_1$$ ，高是 $$y_2 − y_1$$ 。根据勾股定理，斜边L满足 $$L^2 = (x_2 − x_1)^2 + (y_2 − y_1)^2$$ ，
 
-**证明：**考虑上图中的两点 \(x1, y1\)和\(x2, y2\) 。做一个直角三角形，令线段是该直角三角形的斜边。在我们的图形中，三角形的底是x2 − x1，高是y2 − y1。根据勾股定理，斜边L满足
-
-L2 = \(x2 − x1\)2 + \(y2 − y1\)2
-
-所以
-
-![](file:///C:/Users/samuel/AppData/Local/Temp/msohtmlclip1/01/clip_image091.jpg)
+所以 $$L = \sqrt{(x_2 − x_1)^2 + (y_2 − y_1)^2}$$ 。
 
 □
 
-注意方程在 x2 &lt; x1 或 y2 &lt; y1时同样有效。例如当 x1 = 5 、 x2 = 1时，x1和x2之间的距离是4。即使x2 − x1 = −4，但其平方是16，所以并不影响最后的结果。
+注意方程在 $$x_2 < x_1$$ 或 $$ y_2 < y_1$$ 时同样有效。例如当 $$x_1 = 5$$ 、 $$x_2 = 1$$ 时， $$x_1$$ 和 $$x_2$$ 之间的距离是4。即使 $$x_2 − x_1 = −4$$ ，但其平方是16，所以并不影响最后的结果。
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">
-        <p>&#x65C1;&#x767D;</p>
-        <p>&#x5728;&#x4E00;&#x4E2A;a &#xD7; b &#xD7; c&#x7684;&#x76D2;&#x5B50;&#x4E2D;&#xFF0C;&#x5BF9;&#x89D2;&#x7EBF;&#x7684;&#x957F;&#x5EA6;&#x662F;&#x591A;&#x5C11;&#xFF1F;&#x4EE4;O&#x548C;P&#x662F;&#x76D2;&#x5B50;&#x76F8;&#x5BF9;&#x7684;&#x4E24;&#x4E2A;&#x9876;&#x70B9;&#x3002;&#x76D2;&#x5B50;&#x7684;&#x5E95;&#x662F;a
-          &#xD7; b&#x7684;&#x77E9;&#x5F62;&#xFF0C;&#x6240;&#x4EE5;&#x5BF9;&#x89D2;&#x7EBF;
-          <img
-          src="file:///C:/Users/samuel/AppData/Local/Temp/msohtmlclip1/01/clip_image093.png"
-          alt/>&#x7684;&#x957F;&#x5EA6;&#x662F;
-          <img src="file:///C:/Users/samuel/AppData/Local/Temp/msohtmlclip1/01/clip_image095.png"
-          alt/>&#x3002;</p>
-        <p>
-          <img src="file:///C:/Users/samuel/AppData/Local/Temp/msohtmlclip1/01/clip_image097.jpg"
-          alt/>
-        </p>
-        <p>&#x73B0;&#x5728;&#x8BA9;&#x6211;&#x4EEC;&#x4ECE;P&#x70B9;&#x51FA;&#x53D1;&#x5411;&#x4E0A;&#x79FB;&#x52A8;c&#x5230;Q&#x70B9;&#x3002;&#x4E09;&#x89D2;&#x5F62;OPQ&#x662F;&#x4E00;&#x4E2A;&#x76F4;&#x89D2;&#x4E09;&#x89D2;&#x5F62;&#xFF0C;&#x5B83;&#x7684;&#x4E24;&#x6761;&#x76F4;&#x89D2;&#x8FB9;&#x7684;&#x957F;&#x5EA6;&#x5206;&#x522B;&#x662F;c&#x548C;
-          <img
-          src="file:///C:/Users/samuel/AppData/Local/Temp/msohtmlclip1/01/clip_image095.png"
-          alt/>&#xFF0C;&#x800C;
-          <img src="file:///C:/Users/samuel/AppData/Local/Temp/msohtmlclip1/01/clip_image099.png"
-          alt/>&#x662F;&#x5B83;&#x7684;&#x659C;&#x8FB9;&#x3002;&#x6240;&#x4EE5;
-          <img src="file:///C:/Users/samuel/AppData/Local/Temp/msohtmlclip1/01/clip_image099.png"
-          alt/>&#x7684;&#x957F;&#x5EA6;&#x662F;</p>
-        <p>
-          <img src="file:///C:/Users/samuel/AppData/Local/Temp/msohtmlclip1/01/clip_image101.png"
-          alt/>
-        </p>
-      </th>
-    </tr>
-  </thead>
-  <tbody></tbody>
-</table>
+{% hint style="info" %}
+在一个 $$a × b × c$$ 的盒子中，对角线的长度是多少？令O和P是盒子相对的两个顶点。盒子的底是 $$a × b$$ 的矩形，所以对角线 $$\overline{OP}$$ 的长度是 $$\sqrt{(a^2+b^2)}$$ 。
+
+![](.gitbook/assets/image%20%28172%29.png) 
+
+现在让我们从P点出发向上移动c到Q点。三角形OPQ是一个直角三角形，它的两条直角边的长度分别是c和 $$\sqrt{(a^2+b%2)}$$ ，而 $$\overline{OQ}$$ 是它的斜边。所以$$\overline{OQ}$$ 的长度是
+
+$$\sqrt{(\sqrt{a^2+b^2})^2+c^2}=\sqrt{a^2+b^2+c^2}$$ 
+{% endhint %}
 
 我们现在准备证明一个既优雅又有用的三角恒等式。这个定理的证明有点棘手，所以你可以跳过它，但是好消息是，一旦我们做了努力去建立它，那么将立即能得到更多的恒等式。
 
-**定理：**对任意角A和B，
+**定理：**对任意角A和B， $$\cos(A − B) = \cos A \cos B + \sin A \sin B$$ 。
 
-cos\(A − B\) = cos A cos B + sin A sin B
+**证明：**在以O为圆心的单位圆上，令P点为\(cos A, sin A\) ，Q点为\(cos B, sin B\)。假设c代表 $$\overline{PQ}$$ 的长度。关于c我们能说些什么呢？
 
-**证明：**在以O为圆心的单位圆上，令P点为\(cos A, sin A\) ，Q点为\(cos B, sin B\)。假设c代表![](file:///C:/Users/samuel/AppData/Local/Temp/msohtmlclip1/01/clip_image103.png)的长度。关于c我们能说些什么呢？
+![&#x6B64;&#x56FE;&#x53EF;&#x4EE5;&#x5E2E;&#x52A9;&#x8BC1;&#x660E;cos\(A &#x2212; B\) = cos A cos B + sin A sin B](.gitbook/assets/image%20%28173%29.png)
 
-![](file:///C:/Users/samuel/AppData/Local/Temp/msohtmlclip1/01/clip_image105.jpg)
+在三角形OPQ中，我们可以看到 $$\overline{OP}$$ 和 $$\overline{OQ}$$ 都是单位圆的半径，所以它们的长度都是1并且∠POQ等于A-B。根据余弦定律
 
-此图可以帮助证明cos\(A − B\) = cos A cos B + sin A sin B
+$$\begin{aligned} c² &= 1² + 1² - 2(1)(1)cos(A - B) \\     &= 2 - 2cos(A - B) \end{aligned}$$ 
 
-在三角形OPQ中，我们可以看到![](file:///C:/Users/samuel/AppData/Local/Temp/msohtmlclip1/01/clip_image093.png)和![](file:///C:/Users/samuel/AppData/Local/Temp/msohtmlclip1/01/clip_image099.png)都是单位圆的半径，所以它们的长度都是1并且∠POQ等于A-B。根据余弦定律
-
-c² = 1² + 1² - 2\(1\)\(1\)cos\(A - B\)
-
-    = 2 - 2cos\(A - B\)
-
-另一方面，根据距离公式，c满足
-
-c2 = \(x2 − x1\)2 + \(y2 − y1\)2
+另一方面，根据距离公式，c满足 $$c^2 = (x_2 − x_1)^2 + (y_2 − y_1)^2$$ 。
 
 所以从P点到Q的距离c也满足
 
-c² = \(cos A - cos B\)²＋\(sin A - sin B\)²
+$$\begin{aligned} c^2 &= (\cos A - \cos B)^2＋(\sin A - \sin B)^2 \\ &= \cos^2 B - 2\cos A \cos B + \cos^2 A + \sin^2 B - 2\sin A \sin B + \sin^2 A \\ &= 2 - 2\cos A \cos B - 2\sin A \sin B \end{aligned}$$ 
 
-= cos² B - 2cos A cos B + cos² A + sin² B - 2sin A sin B + sin² A
-
-= 2 - 2cos A cos B - 2sin A sin B
-
-注意此处用到了cos2 B + sin2 B = 1 和 cos2 A + sin2 A = 1。
+注意此处用到了 $$\cos^2 B + \sin^2 B = 1 和 \cos^2 A + \sin^2 A = 1$$ 。
 
 这样，我们可以得到
 
-2 − 2 cos\(A − B\) = 2 − 2 cos A cos B − 2 sin A sin B
+$$2 − 2 \cos(A − B) = 2 − 2 \cos A \cos B − 2 \sin A \sin B$$ 
 
 两边同时减去2并除以-2，
 
-cos\(A − B\) = cos A cos B + sin A sin B
+$$\cos(A − B) = \cos A \cos B + \sin A \sin B$$ 
 
 □
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">
-        <p><b>&#x65C1;&#x767D;</b>
-        </p>
-        <p>cos(A - B)&#x65B9;&#x7A0B;&#x7684;&#x8BC1;&#x660E;&#x57FA;&#x4E8E;&#x4F59;&#x5F26;&#x5B9A;&#x5F8B;&#x5E76;&#x5047;&#x5B9A;0&#xB0;
-          &lt; A &#x2212; B &lt; 180&#xB0;&#x3002;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x4E0D;&#x505A;&#x8FD9;&#x4E9B;&#x5047;&#x8BBE;&#x5C31;&#x80FD;&#x591F;&#x8BC1;&#x660E;&#x8BE5;&#x65B9;&#x7A0B;&#x6210;&#x7ACB;&#x3002;&#x5982;&#x679C;&#x6211;&#x4EEC;&#x5C06;&#x4E09;&#x89D2;&#x5F62;POQ&#x987A;&#x65F6;&#x9488;&#x8F6C;B&#x5EA6;&#xFF0C;&#x6211;&#x4EEC;&#x5F97;&#x5230;&#x5168;&#x7B49;&#x4E09;&#x89D2;&#x5F62;P&apos;O&apos;Q&apos;&#x5176;&#x4E2D;Q&apos;&#xFF08;1,
-          0&#xFF09;&#x843D;&#x5728;x&#x8F74;&#x4E0A;&#x3002;</p>
-        <p>
-          <img src="file:///C:/Users/samuel/AppData/Local/Temp/msohtmlclip1/01/clip_image107.jpg"
-          alt/>
-        </p>
-        <p>&#x56E0;&#x4E3A;&#x2220;P&#x2032;OQ&#x2032; = A &#x2212; B&#xFF0C;&#x6211;&#x4EEC;&#x5F97;P&#x2032;
-          = (cos(A &#x2212; B), sin(A &#x2212; B))&#x3002;&#x8FD9;&#x6837;&#xFF0C;&#x5982;&#x679C;&#x6211;&#x4EEC;&#x5E94;&#x7528;&#x957F;&#x5EA6;&#x65B9;&#x7A0B;&#x6C42;P&apos;Q&apos;&#x7684;&#x957F;&#x5EA6;&#xFF0C;&#x6211;&#x4EEC;&#x5F97;&#x5230;</p>
-        <p>c&#xB2; = (cos (A - B) - 1)&#xB2;&#xFF0B;(sin (A - B) - 0)&#xB2;</p>
-        <p>= cos&#xB2; (A - B) - 2cos (A - B) + 1 + sin&#xB2; (A - B)</p>
-        <p>= 2 - 2cos(A - B)</p>
-        <p>&#x6240;&#x4EE5;&#xFF0C;&#x8FD9;&#x6837;&#x4E0D;&#x7528;&#x4F7F;&#x7528;&#x4F59;&#x5F26;&#x5B9A;&#x5F8B;&#xFF0C;&#x4EE5;&#x53CA;&#x4E0D;&#x5BF9;&#x89D2;A-B&#x505A;&#x4EFB;&#x4F55;&#x5047;&#x8BBE;&#xFF0C;&#x6211;&#x4EEC;&#x80FD;&#x591F;&#x5F97;&#x51FA;&#x7ED3;&#x8BBA;c2
-          = 2 &#x2212; 2 cos(A &#x2212; B) &#x3002;</p>
-      </th>
-    </tr>
-  </thead>
-  <tbody></tbody>
-</table>
+{% hint style="info" %}
+cos\(A - B\)方程的证明基于余弦定律并假定0° &lt; A − B &lt; 180°。我们可以不做这些假设就能够证明该方程成立。如果我们将三角形POQ顺时针转B度，我们得到全等三角形P'O'Q'其中Q'（1, 0）落在x轴上。
+
+![](.gitbook/assets/image%20%28175%29.png) 
+
+因为∠P′OQ′ = A − B，我们得P′ = \(cos\(A − B\), sin\(A − B\)\)。这样，如果我们应用长度方程求P'Q'的长度，我们得到
+
+$$\begin{aligned} c^2 &= (\cos (A - B) - 1)^2＋(\sin (A - B) - 0)^2 \\   & = \cos^2 (A - B) - 2\cos (A - B) + 1 + \sin^2 (A - B) \\    &= 2 - 2\cos(A - B) \end{aligned}$$ 
+
+所以，这样不用使用余弦定律，以及不对角A-B做任何假设，我们能够得出结论 $$c^2 = 2 − 2\cos(A − B)$$ 。
+{% endhint %}
 
 注意当A = 90°时，cos\(A − B\) 变成
 
-cos\(90° − B\)  = cos 90° cos B + sin 90° sin B
+$$\begin{aligned} \cos(90° − B)  &= \cos 90° \cos B + \sin 90° \sin B \\                       &= \sin B \end{aligned}$$ 
 
-                      = sin B
+因为 $$\cos 90° = 0$$ 和 $$\sin 90° = 1$$ 。如果我们将B替换成90° - B。我们得到
 
-因为cos 90° = 0和sin 90° = 1。如果我们将B替换成90° - B。我们得到
-
-cos B  = cos 90° cos\(90° - B\) + sin 90° sin\(90° - B\)
-
-           = sin\(90° - B\)
+$$\begin{aligned} \cos B  &= \cos 90° \cos(90° - B) + \sin 90° \sin(90° - B) \\            &= sin(90° - B) \end{aligned}$$ 
 
 前面我们看到，当B是锐角时，这两个表述是正确的。但上面的代数推导使它们对所有角都成立，同样的，如果我们将cos\(A - B\)中的B用-B替换，我们得到
 
-cos\(A + B\) = cos A cos B - sin A sin B
+$$\cos(A + B) = \cos A \cos B - \sin A \sin B$$ 
 
-因为cos\(−B\) = cosB、sin\(−B\) = − sinB。当我们令前面公式中的B = A，则我们得到二倍角公式：
+因为 $$\cos(−B) = \cos B$$ 、 $$\sin(−B) = − \sin B$$ 。当我们令前面公式中的B = A，则我们得到二倍角公式：
 
-cos\(2A\) = cos²A − sin²A
+$$\cos(2A) = \cos^2A − \sin^2A$$ 
 
-因为 cos2 A = 1 − sin2 A、sin2 A = 1 − cos2 A，我们同样可以得到
+因为 $$\cos2 A = 1 − \sin^2 A$$ 、 $$\sin2 A = 1 − \cos^2 A$$ ，我们同样可以得到
 
 cos\(2A\) = 1 − 2 sin2 A和cos\(2A\) = 2 cos2 A − 1
 
 基于这些余弦恒等式，我们可以得到正弦恒等式。例如，
 
-sin\(A + B\) = cos\(90° - \(A + B\)\) = cos\(\(90° - A\) - B\)
+$$\begin{aligned} \sin(A + B) &= \cos(90° - (A + B)) = \cos((90° - A) - B) \\ &= \cos(90° - A)\cos B + \sin(90° - A)\sin B \\ &= \sin A\cos B + \cos A\sin B \end{aligned}$$ 
 
-= cos\(90° - A\)cosB + sin\(90° - A\)sinB
+当B = A，我们得到正弦的二倍角公式
 
-= sinAcosB + cosAsinB
-
-当B = A，我们得到正弦的二倍角公式。
-
-sin\(2A\) = 2 sin A cos A
+$$\sin(2A) = 2 \sin A \cos A$$ 
 
 用-B替换B
 
-sin\(A − B\) = sin A cos B − cos A sin B
+$$\sin(A − B) = \sin A \cos B −\ cos A \sin B$$ 
 
 让我们总结一下我们学过的恒等式
 
@@ -615,71 +541,59 @@ sin\(A − B\) = sin A cos B − cos A sin B
 
 一些有用的三角恒等式
 
-再一次，我要指出的是，虽然我们用角A或B写了等式，但这些字母没有什么特别的。你可能会看到字母由其它字母表示的公式。例如，cos\(2u\) = cos2u - sin2u或sin\(2θ\) = 2sinθcosθ。
+再一次，我要指出的是，虽然我们用角A或B写了等式，但这些字母没有什么特别的。你可能会看到字母由其它字母表示的公式。例如， $$\cos(2u) = \cos^2u - \sin^2u$$ 或 $$\sin(2θ) = 2\sinθ\cosθ$$ 。
 
-弧度和三角曲线
+## 弧度和三角曲线
 
 到目前为止，在我们关于几何和三角的讨论中，我们在0到360度的范围内衡量角的大小。但是如果你看一下单位圆，360这个数一点都不自然。这个数是由古巴比伦人选择的，可能是因为他们使用的是60进制。360恰好大约是一年的天数。相反，对于大多数科学和数学领域来说，用弧度来测量角更合适。我们定义
 
-2π radians = 360°
+$$2π radians = 360°$$ 
 
 或者
 
-1radian = 180°÷π
+$$1radian = 180°÷π$$ 
 
-对喜爱τ = 2π的tauists
+对喜爱 $$τ = 2π$$ 的tauists
 
-1 randian = 360°/2π = 360°/τ
+$$1 randian = 360°/2π = 360°/τ$$ 
 
-从数字上看，1弧度大约是57°。为什么弧度比角度更自然?在半径为r的圆上，2π弧度的角正是圆的一周。如果我们取该角的任何分数，我们在圆周上所得到的弧长恰好是2πr的分数。具体地说，1弧度对应一个的弧长为2πr\(1/2π\) = r，m弧度对应弧长mr。总之，在单位圆上，弧度角等于相应的弧长。这十分的方便。
+从数字上看，1弧度大约是57°。为什么弧度比角度更自然?在半径为r的圆上，2π弧度的角正是圆的一周。如果我们取该角的任何分数，我们在圆周上所得到的弧长恰好是2πr的分数。具体地说，1弧度对应一个的弧长为 $$2πr(1/2π) = r$$ ，m弧度对应弧长mr。总之，在单位圆上，弧度角等于相应的弧长。这十分的方便。
 
-![](file:///C:/Users/samuel/AppData/Local/Temp/msohtmlclip1/01/clip_image109.jpg)
+![&#x4E00;&#x4E2A;&#x5706;&#x6709;2&#x3C0;&#x5F27;&#x5EA6;](.gitbook/assets/image%20%28171%29.png)
 
-一个圆有2π弧度
+![&#x8FD9;&#x662F;&#x5355;&#x4F4D;&#x5706;&#x53CA;&#x4E00;&#x4E9B;&#x7528;&#x5F27;&#x5EA6;&#x8868;&#x793A;&#x7684;&#x516C;&#x89D2;](.gitbook/assets/image%20%28176%29.png)
 
-这是单位圆及一些用弧度表示的公角。
-
-![](file:///C:/Users/samuel/AppData/Local/Temp/msohtmlclip1/01/clip_image111.jpg)
-
-这是τ 版
-
-![](file:///C:/Users/samuel/AppData/Local/Temp/msohtmlclip1/01/clip_image113.jpg)
+![&#x8FD9;&#x662F;&#x3C4; &#x7248;](.gitbook/assets/image%20%28170%29.png)
 
 从图片可以看出一些数学家喜欢τ胜过π的原因之一。对90角，它是四分之一的圆，弧度是τ/ 4。对120°，三分之一的圆，它的量度是τ/ 3。的确，字母τ被选中，因为它暗含转动的意思。举例来说，360°是一个圆转了弧度τ；60°是转了的六分之一τ。
 
 正如我们将在本书后面看到的，计算三角函数的公式在使用弧度而不是度数时更加清晰。例如，我们将正弦和余弦写成无限长多项式。
 
-sin x = x − x3/3! + x5/5! − x7/7! + x9/9! − . . .
-
-cos x = 1 − x2/2! + x4/4! − x6/6! + x8/8! − . . .
+$$\begin{aligned} \sin x = x − x^3/3! + x^5/5! − x^7/7! + x^9/9! − . . .\\ \cos x = 1 − x^2/2! + x^4/4! − x^6/6! + x^8/8! − . . . \end{aligned}$$ 
 
 但是这些公式只在x用弧度表示时才有效。同样地，在微积分中，我们会看到sinx的导数是cosx，但只有当x在弧度时才成立。三角函数y = sinx和y = cosx的图形通常是用弧度来表示的。
 
-![](file:///C:/Users/samuel/AppData/Local/Temp/msohtmlclip1/01/clip_image115.jpg)
+![sin x&#x548C;cos x&#x7684;&#x56FE;&#xFF0C;x&#x53D8;&#x91CF;&#x7528;&#x5F27;&#x5EA6;&#x8868;&#x793A;](.gitbook/assets/image%20%28168%29.png)
 
-sin x和cos x的图，x变量用弧度表示
+由于正弦和余弦的循环性质，两图每2π即重复（再次为tauists加分 !）。这是有道理的，因为角x + 2π与x是相同的角。我们说这些图有2π的周期。此外,如果你将余弦曲线右移π/ 2单位，它与正弦曲线完全相同。因为π/2弧度是90度，所以
 
-由于正弦和余弦的循环性质，两图每2π即重复（再次为tauists加分 !）。这是有道理的，因为角x + 2π与x是相同的角。我们说这些图有2π的周期。此外,如果你将余弦曲线右移π/ 2单位，它与正弦曲线完全相同。因为π/2弧度是90度，所以。
+$$\sin x = \cos(π/2 - x) = \cos(x - π/2)$$ 
 
-sinx = cos\(π/2 - x\) = cos\(x - π/2\)
+例如 $$\sin 0 = 0 = \cos(−π/2)、\ \sin π/2 = 1 = \cos 0$$ 。
 
-例如sin 0 = 0 = cos\(−π/2\)、sin π/2 = 1 = cos 0。
+因为 $$\tan x = \sin x/\cos x$$ ，当 $$\cos x = 0$$ 时，它的值不明确。正切函数的曲线也以π为周期，图形如下
 
-因为tan x = sin x/cos x，当cos x = 0时，它的值不明确。正切函数的曲线也以π为周期，图形如下
-
-![](file:///C:/Users/samuel/AppData/Local/Temp/msohtmlclip1/01/clip_image117.jpg)
-
-y = tan x的曲线
+![y = tan x&#x7684;&#x66F2;&#x7EBF;](.gitbook/assets/image%20%28169%29.png)
 
 你可以结合正弦函数和余弦函数来创建几乎任何一个周期性的函数。这就是为什么三角函数经常用在为周期性行为建模上，如温度和经济数据，或物理现象，如声音和水波、电或心脏跳动。
 
 让我们以一个三角学和π的神奇联系结束本章。在一个计算器上尽量的输入5.我的计算器最大允许5,555,555,555,555,555。接着取它的倒数。我得到
 
-1/5,555,555,555,555,555 = 1.8 × 10−16
+$$1/5,555,555,555,555,555 = 1.8 × 10^{−16}$$ 
 
 接着在（Degree mod）按sin键。看一看最高有效位。我的计算器上显示如下的数
 
-3.1415926535898 × 10−18
+$$3.1415926535898 × 10^{−18}$$ 
 
 它正好与π的前几位相同。事实上，只要你不少于5个5，你就能够得到一个π的近似值。
 
