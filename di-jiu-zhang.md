@@ -4,8 +4,6 @@
 
 20° = π / 9
 
-## 
-
 ## **三角函数的高点**
 
 三角学使我们可以解决用经典几何无法解决的几何问题。例如，考虑以下问题.
@@ -361,7 +359,7 @@ $$
 \sqrt{(5-(-2))^2+(8-3)^2}=\sqrt{7^2+5^2}=\sqrt{74}\approx{8.6}
 $$
 
-![&#x6839;&#x636E;&#x52FE;&#x80A1;&#x5B9A;&#x7406;L&#xB2; = \(x2-x1\)&#xB2; + \(y2-y1\)&#xB2;](.gitbook/assets/image%20%28174%29.png)
+![&#x6839;&#x636E;&#x52FE;&#x80A1;&#x5B9A;&#x7406;L&#xB2; = \(x2-x1\)&#xB2; + \(y2-y1\)&#xB2;](.gitbook/assets/image%20%28175%29.png)
 
 **证明：**考虑上图中的两点 $$(x_1, \ y_1)$$ 和 $$(x_2,\  y_2) $$ 。做一个直角三角形，令线段是该直角三角形的斜边。在我们的图形中，三角形的底是 $$x_2 − x_1$$ ，高是 $$y_2 − y_1$$ 。根据勾股定理，斜边L满足 $$L^2 = (x_2 − x_1)^2 + (y_2 − y_1)^2$$ ，
 
@@ -374,7 +372,7 @@ $$
 {% hint style="info" %}
 在一个 $$a × b × c$$ 的盒子中，对角线的长度是多少？令O和P是盒子相对的两个顶点。盒子的底是 $$a × b$$ 的矩形，所以对角线 $$\overline{OP}$$ 的长度是 $$\sqrt{(a^2+b^2)}$$ 。
 
-![](.gitbook/assets/image%20%28172%29.png) 
+![](.gitbook/assets/image%20%28173%29.png) 
 
 现在让我们从P点出发向上移动c到Q点。三角形OPQ是一个直角三角形，它的两条直角边的长度分别是c和 $$\sqrt{(a^2+b%2)}$$ ，而 $$\overline{OQ}$$ 是它的斜边。所以$$\overline{OQ}$$ 的长度是
 
@@ -387,7 +385,7 @@ $$\sqrt{(\sqrt{a^2+b^2})^2+c^2}=\sqrt{a^2+b^2+c^2}$$
 
 **证明：**在以O为圆心的单位圆上，令P点为\(cos A, sin A\) ，Q点为\(cos B, sin B\)。假设c代表 $$\overline{PQ}$$ 的长度。关于c我们能说些什么呢？
 
-![&#x6B64;&#x56FE;&#x53EF;&#x4EE5;&#x5E2E;&#x52A9;&#x8BC1;&#x660E;cos\(A &#x2212; B\) = cos A cos B + sin A sin B](.gitbook/assets/image%20%28173%29.png)
+![&#x6B64;&#x56FE;&#x53EF;&#x4EE5;&#x5E2E;&#x52A9;&#x8BC1;&#x660E;cos\(A &#x2212; B\) = cos A cos B + sin A sin B](.gitbook/assets/image%20%28174%29.png)
 
 在三角形OPQ中，我们可以看到 $$\overline{OP}$$ 和 $$\overline{OQ}$$ 都是单位圆的半径，所以它们的长度都是1并且∠POQ等于A-B。根据余弦定律
 
@@ -414,7 +412,7 @@ $$\cos(A − B) = \cos A \cos B + \sin A \sin B$$
 {% hint style="info" %}
 cos\(A - B\)方程的证明基于余弦定律并假定0° &lt; A − B &lt; 180°。我们可以不做这些假设就能够证明该方程成立。如果我们将三角形POQ顺时针转B度，我们得到全等三角形P'O'Q'其中Q'（1, 0）落在x轴上。
 
-![](.gitbook/assets/image%20%28175%29.png) 
+![](.gitbook/assets/image%20%28176%29.png) 
 
 因为∠P′OQ′ = A − B，我们得P′ = \(cos\(A − B\), sin\(A − B\)\)。这样，如果我们应用长度方程求P'Q'的长度，我们得到
 
@@ -561,7 +559,7 @@ $$1 randian = 360°/2π = 360°/τ$$
 
 ![&#x4E00;&#x4E2A;&#x5706;&#x6709;2&#x3C0;&#x5F27;&#x5EA6;](.gitbook/assets/image%20%28171%29.png)
 
-![&#x8FD9;&#x662F;&#x5355;&#x4F4D;&#x5706;&#x53CA;&#x4E00;&#x4E9B;&#x7528;&#x5F27;&#x5EA6;&#x8868;&#x793A;&#x7684;&#x516C;&#x89D2;](.gitbook/assets/image%20%28176%29.png)
+![&#x8FD9;&#x662F;&#x5355;&#x4F4D;&#x5706;&#x53CA;&#x4E00;&#x4E9B;&#x7528;&#x5F27;&#x5EA6;&#x8868;&#x793A;&#x7684;&#x516C;&#x89D2;](.gitbook/assets/image%20%28177%29.png)
 
 ![&#x8FD9;&#x662F;&#x3C4; &#x7248;](.gitbook/assets/image%20%28170%29.png)
 
