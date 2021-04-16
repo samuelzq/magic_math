@@ -11,6 +11,6 @@
 * [第八章 π的魔力](di-ba-zhang.md)
 * [第九章 三角函数的魔力](di-jiu-zhang.md)
 * [第十章 i和e的魔力](di-shi-zhang.md)
-* [第十一章](di-shi-yi-zhang.md)
+* [第十一章 微积分的魔力](di-shi-yi-zhang.md)
 * [第十二章](di-shi-er-zhang.md)
 
