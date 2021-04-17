@@ -9,21 +9,15 @@ y = x11 =&gt; y’ = 11x10
 
 举个例子，假设你有一个正方形的硬纸板，每边12英寸，如下图所示。假设你从角落里切出x乘x的方块，然后把结果的标签折叠起来，创建一个托盘。结果托盘的最大可能体积是多少？
 
-我们先把体积视为x的函数，托盘的底部会有面积\(12 − 2x\)\(12 − 2x\)而托盘的高度是x，所以托盘的体积是
+我们先把体积视为x的函数，托盘的底部会有面积\(12 − 2x\)\(12 − 2x\)而托盘的高度是x，所以托盘的体积是 $$V = (12 − 2x)^2x$$ 。
 
-V = \(12 − 2x\)2x
-
-![](file:///C:/Users/samuel/AppData/Local/Temp/msohtmlclip1/01/clip_image002.png)
-
-x取什么值时，盒子的体积最大？
+![x&#x53D6;&#x4EC0;&#x4E48;&#x503C;&#x65F6;&#xFF0C;&#x76D2;&#x5B50;&#x7684;&#x4F53;&#x79EF;&#x6700;&#x5927;&#xFF1F;](.gitbook/assets/image%20%28191%29.png)
 
 我们的目标是选择x的值来使体积尽可能大。我们不能选择太大或太小的x。例如，如果x = 0或x = 6，那么这个盒子的体积是0。x的最优值介于两者之间。
 
-下面是函数y = \(12 − 2x\)2x在x从0到6时的曲线图。当x = 1时，我们计算出体积是y = 100。当x = 2时，y = 128。当x = 3时， y = 108。x = 2的值看起来很有希望，但也许有一个真实的在1到3之间的数会是更好得选择？
+下面是函数 $$y = (12 − 2x)^2x$$ 在x从0到6时的曲线图。当x = 1时，我们计算出体积是y = 100。当x = 2时，y = 128。当x = 3时， y = 108。x = 2的值看起来很有希望，但也许有一个真实的在1到3之间的数会是更好得选择？
 
-![](file:///C:/Users/samuel/AppData/Local/Temp/msohtmlclip1/01/clip_image004.png)
-
-使y = \(12 − 2x\)2x最大的那一点有一条水平的切线。
+![&#x4F7F;y = \(12 &#x2212; 2x\)^2x&#x6700;&#x5927;&#x7684;&#x90A3;&#x4E00;&#x70B9;&#x6709;&#x4E00;&#x6761;&#x6C34;&#x5E73;&#x7684;&#x5207;&#x7EBF;](.gitbook/assets/image%20%28190%29.png)
 
 在最大值的左边，函数是向上的，斜率是正的，向右，它是向下的，斜率是负的。所以，在最大值点上，函数既不增加也不减少：它在两者之间转换。为了更精确地说，在这个最优点，有一条水平的切线（斜率为0）。在这一章中，我们将用微积分来求出0到6之间的点，过这一点的切线是水平的。
 
@@ -33,361 +27,344 @@ x取什么值时，盒子的体积最大？
 
 下图中，我们画了不同直线的图形。其中y = −x的斜率为-1，y = 5的斜率是0。
 
-![](file:///C:/Users/samuel/AppData/Local/Temp/msohtmlclip1/01/clip_image006.png)
+![&#x76F4;&#x7EBF;&#x7684;&#x56FE;&#x5F62;](.gitbook/assets/image%20%28188%29.png)
 
-直线的图形
+给定任意两点，我们可以画一条线，并在不需要直线公式的情况下确定直线的斜率。穿过点 $$(x_1,\ y_1)$$ 和 $$(x_2,\ y_2)$$ 的直线的斜率由rise over run公式得出：
 
-给定任意两点，我们可以画一条线，并在不需要直线公式的情况下确定直线的斜率。穿过点\(x1, y1\) 和 \(x2, y2\)的直线的斜率由rise over run公式得出:
-
-![](file:///C:/Users/samuel/AppData/Local/Temp/msohtmlclip1/01/clip_image008.png)
+$$
+m=\frac{y_2-y_1}{x_2-x_1}
+$$
 
 例如取直线y = 2x + 3上两点\(0, 3\)和\(4, 11\)。连接两点的直线的斜率是
 
-![](file:///C:/Users/samuel/AppData/Local/Temp/msohtmlclip1/01/clip_image010.png)
+$$
+m=\frac{y_2-y_1}{x_2-x_1}=\frac{11-3}{4-0}=\frac{8}{4}=2
+$$
 
 这恰好是我们在最初的直线等式中看到的。
 
-选择考虑方程y = x2 + 1，如下面的曲线所示。这张图不是一条直线，我们可以看到斜率一直在变化。让我们试着确定过点\(1, 2\)的切线的斜率。
+选择考虑方程 $$y = x^2 + 1$$ ，如下面的曲线所示。这张图不是一条直线，我们可以看到斜率一直在变化。让我们试着确定过点\(1, 2\)的切线的斜率。
 
-![](file:///C:/Users/samuel/AppData/Local/Temp/msohtmlclip1/01/clip_image012.png)
+![&#x5BF9;y = x^2 + 1&#xFF0C;&#x627E;&#x51FA;&#x8FC7;&#x70B9;\(1, 2\)&#x7684;&#x76F4;&#x7EBF;&#x7684;&#x659C;&#x7387;](.gitbook/assets/image%20%28193%29.png)
 
-对y = x2 + 1，找出过点\(1, 2\)的直线的斜率
+坏消息是需要两个点才能确定斜率，而我们只有一个点 $$(1,\ 2)$$ 。因此我们首先通过观察一条穿过曲线上两个点的线\(称为割线\)来求切线斜率的近似值。如果x = 1.5，那么 $$y  = 1.5^2 + 1 = 3.25$$ 。我们来看看从 $$(1,\ 2)$$ 到 $$(1.5,\ 3.25)$$ 的这条线的斜率。根据斜率公式，这条割线的斜率是
 
-坏消息是需要两个点才能确定斜率，而我们只有一个点\(1, 2\)。因此我们首先通过观察一条穿过曲线上两个点的线\(称为割线\)来求切线斜率的近似值。如果x = 1.5，那么y  = 1.52 + 1 = 3.25。我们来看看从\(1, 2\)到\(1.5, 3.25\)的这条线的斜率。根据斜率公式，这条割线的斜率是
+$$
+m=\frac{y_2-y_1}{x_2-x_1}=\frac{3.25-2}{1.5-1}=\frac{1.25}{0.5}=2.5
+$$
 
-![](file:///C:/Users/samuel/AppData/Local/Temp/msohtmlclip1/01/clip_image014.png)
+![&#x7528;&#x5272;&#x7EBF;&#x903C;&#x8FD1;&#x5207;&#x7EBF;](.gitbook/assets/image%20%28189%29.png)
 
-![](file:///C:/Users/samuel/AppData/Local/Temp/msohtmlclip1/01/clip_image016.png)
+为了更好的逼近切线，我们将第二个点向\(1, 2\)移动。例如，如果x = 1.1, 则 $$y = (1.1)^2 + 1 = 2.21$$ 。所得割线的斜率是 $$m = (2.21 − 2)/(1.1 − 1) = 2.1$$ 。在下表中可见，当第二个点越来越靠近\(1, 2\)时，割线的斜率越发接近2。
 
-用割线逼近切线
+| $$(x_1,\ y_2)$$  | $$x_2$$  | $$y_2=x_2^2+1$$  | $$\frac{y_2-y_1}{x_2-x_1}$$  | Slope |
+| :--- | :--- | :--- | :--- | :--- |
+| $$(1,\ 2)$$  | 1.5 | 3.25 | $$\frac{3.25-2}{1.5-1}=\frac{1.25}{0.5}$$  | 2.5 |
+| $$(1,\ 2)$$  | 1.1 | 2.21 | $$\frac{2.21-2}{1.1-1}=\frac{0.21}{0.1}$$  | 2.1 |
+| $$(1,\ 2)$$  | 1.01 | 2.0201 | $$\frac{2.0201-2}{1.01-1}=\frac{0.0201}{0.01}$$  | 2.01 |
+| $$(1,\ 2)$$  | 1.001 | 2.002001 | $$\frac{2.002001-2}{1.001-1}=\frac{0.002001}{0.001}$$  | 2.001 |
+| $$(1,\ 2)$$  | 1+h | $$2+2h+h^2$$  | $$\frac{2+2h+2h^2-2}{(1+h)-1}=\frac{2h+h^2}{h}$$  | 2+h |
 
-为了更好的逼近切线，我们将第二个点向\(1, 2\)移动。例如，如果x = 1.1, 则 y = \(1.1\)2 + 1 = 2.21。所得割线的斜率是m = \(2.21 − 2\)/\(1.1 − 1\) = 2.1。在下表中可见，当第二个点越来越靠近\(1, 2\)时，割线的斜率越发接近2。
+看看当x = 1 + h在h = 1时，会发生什么。但可能只是与x = 1相差丝毫的距离。此时 $$y = (1 + h)^2 + 1 = 2 + 2h + h^2$$ 。这条割线的斜率就是
 
-![](file:///C:/Users/samuel/AppData/Local/Temp/msohtmlclip1/01/clip_image018.png)
-
-看看当x = 1 + h在h = 1时，会发生什么。但可能只是与x = 1相差丝毫的距离。此时y = \(1 + h\)2 + 1 = 2 + 2h + h2。这条割线的斜率就是
-
-![](file:///C:/Users/samuel/AppData/Local/Temp/msohtmlclip1/01/clip_image020.png)
+$$
+\frac{y_2-y_1}{x_2-x_1}=\frac{(2+2h+h^2)-2}{(1+h)-1}=\frac{2h+h^2}{h}=2+h
+$$
 
 当h越来越接近于0时，割线越来越接近2。正式地,我们说
 
-![](file:///C:/Users/samuel/AppData/Local/Temp/msohtmlclip1/01/clip_image022.png)
+$$
+\lim_{h \to 0}(2+h)=2
+$$
 
-这个符号表示当h趋于0时，2 + h的极限是2。直觉上，当h越来越接近于0时，2 + h越来越接近2。所以我们发现，曲线y = x2 + 1在点（1, 2）的切线的斜率是2。
+这个符号表示当h趋于0时，2 + h的极限是2。直觉上，当h越来越接近于0时，2 + h越来越接近2。所以我们发现，曲线 $$y = x^2 + 1$$ 在点（1, 2）的切线的斜率是2。
 
-一般情况是这样的。对于函数y = f \(x\)，我们想求出点\(x, f \(x\)\)处切线的斜率。如下图所示，穿过点\(x, f \(x\)\)和邻点\(x + h, f \(x + h\)\)的割线的斜率是
+一般情况是这样的。对于函数 $$y = f (x)$$ ，我们想求出点 $$(x,\ f (x))$$ 处切线的斜率。如下图所示，穿过点 $$(x,\ f (x))$$ 和邻点 $$(x + h,\ f (x + h))$$ 的割线的斜率是
 
-![](file:///C:/Users/samuel/AppData/Local/Temp/msohtmlclip1/01/clip_image024.png)
+$$
+\frac{y_2-y_1}{x_2-x_1}=\frac{f(x+h)-f(x)}{(x+h)-x}=\frac{f(x+h)-f(x)}{h}
+$$
 
-![](file:///C:/Users/samuel/AppData/Local/Temp/msohtmlclip1/01/clip_image026.png)
+![](.gitbook/assets/image%20%28194%29.png)
 
-穿过点\(x, f\(x\)\) 和 \(x + h, f\(x + h\)\)的割线的斜率是![](file:///C:/Users/samuel/AppData/Local/Temp/msohtmlclip1/01/clip_image028.png)
+                                          穿过点\(x, f\(x\)\) 和 \(x + h, f\(x + h\)\)的割线的斜率是 $$\frac{f(x+h)-f(x)}{h}$$ 
 
 我们使用符号f′\(x\)表示切线在点 \(x,  f\(x\)\)的斜率，所以
 
-![](file:///C:/Users/samuel/AppData/Local/Temp/msohtmlclip1/01/clip_image030.jpg)
+$$
+f^{'}(x)=\lim_{h \to \infty}\frac{f(x+h)-f(x)}{h}
+$$
 
-这是一个复杂的定义，我们来举几个例子。对直线 y = mx + b，它的函数是f\(x\) = mx + b。我们用x + h替换x得到 f\(x + h\) = m\(x + h\) + b。所以割线的斜率等于
+这是一个复杂的定义，我们来举几个例子。对直线 $$ y = mx + b$$ ，它的函数是 $$f(x) = mx + b$$ 。我们用 $$x + h$$ 替换 $$x$$ 得到 $$ f(x + h) = m(x + h) + b$$ 。所以割线的斜率等于
 
-![](file:///C:/Users/samuel/AppData/Local/Temp/msohtmlclip1/01/clip_image032.jpg)
+$$
+\frac{f(x+h)-f(x)}{h}=\frac{m(x+h)+b-(mx+b)}{h}=\frac{mh}{h}=m
+$$
 
-无论x的值是多少，切线的斜率都等于m，所以 f′\(x\) = m。这能够讲得通，因为直线的斜率y = mx + b 总是m。
+无论x的值是多少，切线的斜率都等于 $$m$$ ，所以 $$ f^′(x) = m$$ 。这能够讲得通，因为直线的斜率 $$y = mx + b $$ 总是m。
 
-现在让我们使用刚刚的定义来推导y = x2 上各点切线的斜率。这里，我们有
+现在让我们使用刚刚的定义来推导 $$y = x^2$$ 上各点切线的斜率。这里，我们有
 
-![](file:///C:/Users/samuel/AppData/Local/Temp/msohtmlclip1/01/clip_image034.jpg)
+$$
+\begin{aligned}
+\frac{f(x+h)-f(x)}{h}&=\frac{(x+h)^2-x^2}{h} \\
+&= \frac{(x^2+2xh+h^2)-x^2}{h} \\
+&=\frac{2xh+h^2}{h} \\
+&= 2x+h
+\end{aligned}
+$$
 
-当h等于0时，我们有 f′\(x\) = 2x。
+当h等于0时，我们有 $$ f^′(x) = 2x$$ 。
 
-对f \(x\) = x3，我们得到
+对 $$f (x) = x^3$$ ，我们得到
 
-![](file:///C:/Users/samuel/AppData/Local/Temp/msohtmlclip1/01/clip_image036.jpg)
+$$
+\begin{aligned}
+\frac{f(x+h)-f(x)}{h}&=\frac{(x+h)^3-x^3}{h} \\
+&= \frac{(x^3+3x^2h+3xh^2+h^3)-x^3}{h} \\
+&=\frac{3x^2h+3xh^2+h^3}{h} \\
+&= 3x^2+3xh+h^2
+\end{aligned}
+$$
 
-当h等于0时，我们得到 f′\(x\) = 3x2。
+当h等于0时，我们得到 $$ f^′(x) = 3x^2$$ 。
 
 给定函数y = f\(x\)，确定微分函数f'\(x\)的过程称为微分。 好消息是，一旦我们找到了几个简单函数的导数，我们就可以很容易地确定更复杂函数的导数，而无需使用上面给出的正式的基于极限的定义。 以下定理非常有用。
 
 **定理：**如果u\(x\) = f \(x\) + g\(x\)，则u′\(x\) = f′\(x\) + g′\(x\)。 换句话说，和的导数就是导数的和。 另外，如果c是任何实数，则c f\(x\)的导数是c f ′\(x\)。
 
-作为这个定理的结果，由于y = x3具有导数3x2并且y = x2具有导数2x，因此 y = x3 + x2的导数是3x2 + 2x。 为了说明第二种说法，函数y = 10x3的导数为30x2。
+作为这个定理的结果，由于 $$y = x^3$$ 具有导数 $$3x^2$$ 并且 $$y = x^2$$ 具有导数 $$2x$$ ，因此 $$y = x^3 + x^2$$ 的导数是 $$3x^2 + 2x$$ 。 为了说明第二种说法，函数 $$y = 10x^3$$ 的导数为 $$30x^2$$ 。
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">
-        <p><b>&#x65C1;&#x767D;</b>
-        </p>
-        <p><b>&#x8BC1;&#x660E;&#xFF1A;</b>&#x4EE4;u(x) = f (x) + g(x)&#x3002;&#x5219;</p>
-        <p>
-          <img src="file:///C:/Users/samuel/AppData/Local/Temp/msohtmlclip1/01/clip_image038.jpg"
-          alt/>
-        </p>
-        <p>&#x4E24;&#x8FB9;&#x540C;&#x65F6;&#x53D6;h &#x2192; 0&#x7684;&#x6781;&#x9650;&#xFF0C;&#x6211;&#x4EEC;&#x5F97;&#x5230;</p>
-        <p>u&#x2032;(x) = f&#x2032;(x) + g&#x2032;(x)</p>
-        <p>&#x25A1;</p>
-        <p>&#x8BF7;&#x6CE8;&#x610F;&#xFF0C;&#x5F53;&#x6211;&#x4EEC;&#x5728;&#x6C42;&#x7B49;&#x5F0F;&#x7684;&#x53F3;&#x8FB9;&#x7684;&#x6781;&#x9650;&#x65F6;&#xFF0C;&#x6211;&#x4EEC;&#x5229;&#x7528;&#x4E86;&#x603B;&#x548C;&#x7684;&#x6781;&#x9650;&#x662F;&#x6781;&#x9650;&#x7684;&#x603B;&#x548C;&#x8FD9;&#x4E00;&#x7ED3;&#x8BBA;&#x3002;
-          &#x6211;&#x4EEC;&#x4E0D;&#x4F1A;&#x5728;&#x8FD9;&#x91CC;&#x5BF9;&#x5B83;&#x8FDB;&#x884C;&#x4E25;&#x683C;&#x8BC1;&#x660E;&#xFF0C;&#x4F46;&#x76F4;&#x89C9;&#x662F;&#xFF0C;&#x5982;&#x679C;&#x6570;a&#x8D8A;&#x6765;&#x8D8A;&#x63A5;&#x8FD1;A&#x5E76;&#x4E14;b&#x8D8A;&#x6765;&#x8D8A;&#x63A5;&#x8FD1;B&#xFF0C;&#x5219;a
-          + b&#x8D8A;&#x6765;&#x8D8A;&#x63A5;&#x8FD1;A + B&#x3002; &#x8BF7;&#x6CE8;&#x610F;&#xFF0C;&#x4E58;&#x79EF;&#x7684;&#x6781;&#x9650;&#x662F;&#x6781;&#x9650;&#x7684;&#x4E58;&#x79EF;&#xFF0C;&#x5546;&#x7684;&#x6781;&#x9650;&#x662F;&#x6781;&#x9650;&#x7684;&#x5546;&#x3002;
-          &#x4F46;&#x6B63;&#x5982;&#x6211;&#x4EEC;&#x5C06;&#x770B;&#x5230;&#x7684;&#xFF0C;&#x5BFC;&#x6570;&#x7684;&#x76F8;&#x5E94;&#x89C4;&#x5219;&#x5E76;&#x4E0D;&#x90A3;&#x4E48;&#x76F4;&#x622A;&#x4E86;&#x5F53;&#x3002;
-          &#x4F8B;&#x5982;&#xFF0C;&#x4E58;&#x79EF;&#x7684;&#x5BFC;&#x6570;&#x4E0D;&#x662F;&#x5BFC;&#x6570;&#x7684;&#x4E58;&#x79EF;&#x3002;</p>
-        <p>&#x5BF9;&#x4E8E;&#x5B9A;&#x7406;&#x7684;&#x540E;&#x534A;&#x90E8;&#x5206;&#xFF0C;&#x5982;&#x679C;
-          v(x) = c f (x)&#xFF0C;&#x90A3;&#x4E48;&#x6211;&#x4EEC;&#x6709;</p>
-        <p>
-          <img src="file:///C:/Users/samuel/AppData/Local/Temp/msohtmlclip1/01/clip_image040.jpg"
-          alt/>
-        </p>
-        <p>&#x7ED3;&#x8BBA;&#x5F97;&#x8BC1;</p>
-        <p>&#x25A1;</p>
-      </th>
-    </tr>
-  </thead>
-  <tbody></tbody>
-</table>
+{% hint style="info" %}
+**证明：**令 $$u(x) = f (x) + g(x)$$ ，则
 
-为了求f\(x\) = x4的微分，让我们先将函数f\(x + h\)展开，f\(x + h\) = \(x + h\)4 = x4 + 4x3h + 6x2h2 + 4xh3 + h4。多项式的系数1、4、6、4、1看起来很熟悉，它们正是第四章介绍过的帕斯卡三角的第4行。这样我们便有了
+$$\begin{aligned} \frac{u(x+h)-u(x)}{h}&=\frac{f(x+h)+g(x+h)-(f(x)+g(x))}{h} \\ &=\frac{f(x+h)-f(x)}{h}+\frac{g(x+h)-g(x)}{h} \end{aligned}$$ 
 
-![](file:///C:/Users/samuel/AppData/Local/Temp/msohtmlclip1/01/clip_image042.jpg)
+两边同时取h → 0的极限，我们得到
 
-随着h → 0，我们得到f′\(x\) = 4x3。你看到其中的模式了吗？ x、x2、x3和x4的导数分别为1、2x、3x2和4x3。将相同的逻辑应用于更高的指数给了我们以下强大的规则。导数的另一个通用符号是y'，所以让我们开始在这里使用它。
+$$u^′(x) = f^′(x) + g^′(x)$$ 
 
-**定理（指数法则）：**对于 n ≥ 0,
+□
 
-y = xn 的导数是 y ′ = nxn−1
+请注意，当我们在求等式的右边的极限时，我们利用了总和的极限是极限的总和这一结论。 我们不会在这里对它进行严格证明，但直觉是，如果数a越来越接近A并且b越来越接近B，则a + b越来越接近A + B。 请注意，乘积的极限是极限的乘积，商的极限是极限的商。 但正如我们将看到的，导数的相应规则并不那么直截了当。 例如，乘积的导数不是导数的乘积。
+
+对于定理的后半部分，如果 $$v(x) = c f (x)$$ ，那么我们有
+
+$$\begin{aligned} v^′(x)&=\lim_{h \to 0}\frac{v(x+h)-v(x)}{h}=\lim_{h\to 0}\frac{cf(x+h)-cf(x)}{h} \\ &=c\lim_{h\to 0}\frac{f(x+h)-f(x)}{h}=cf^′(x) \end{aligned}$$ 
+
+结论得证
+
+□
+{% endhint %}
+
+为了求 $$f(x) = x^4$$ 的微分，让我们先将函数 $$f(x + h)$$ 展开， $$f(x + h) = (x + h)^4 = x^4 + 4x^3h + 6x^2h^2 + 4xh^3 + h^4$$ 。多项式的系数1、4、6、4、1看起来很熟悉，它们正是第四章介绍过的帕斯卡三角的第4行。这样我们便有了
+
+$$
+\frac{f(x+h)-f(x)}{h}=\frac{4x^3h+6x^2h^2+4xh^3+h^4}{h}=4x^3+h\times[STUFF]
+$$
+
+随着h → 0，我们得到 $$f^′(x) = 4x^3$$ 。你看到其中的模式了吗？ $$x、x^2、x^3$$ 和 $$x^4$$ 的导数分别为 $$1、2x、3x^2$$ 和 $$4x^3$$ 。将相同的逻辑应用于更高的指数给了我们以下强大的规则。导数的另一个通用符号是y'，所以让我们开始在这里使用它。
+
+**定理（指数法则）：**对于 n ≥ 0， $$y = x^n $$ 的导数是 $$ y^ ′ = nx^{n−1}$$ 
 
 例如
 
-如果y = x5，则y′ = 5x4
+如果 $$y = x^5$$ ，则 $$y^′ = 5x^4$$ 
 
-如果y = x10，则y′ = 10x9
+如果 $$y = x^{10}$$ ，则 $$y^′ = 10x^9$$ 
 
-即使是一个常数函数，如y = 1，也可以通过这个规则来求导。因为对于任意x，1 = x0且y = x0具有导数0x-1 = 0。 这是有道理的，因为y = 1是水平的。 作为指数法则和先前定理的结果，我们现在可以为任何多项式求导。 例如，如果
+即使是一个常数函数，如y = 1，也可以通过这个规则来求导。因为对于任意x， $$1 = x^0$$ 且 $$y = x^0$$ 具有导数 $$0x^{-1} = 0$$ 。 这是有道理的，因为 $$y = 1$$ 是水平的。 作为指数法则和先前定理的结果，我们现在可以为任何多项式求导。 例如，如果
 
-y = x10 + 3x5 - x3 - 7x + 2520
+$$y = x^{10} + 3x^5 - x^3 - 7x + 2520$$ 
 
 则
 
-y'= 10x9 + 15x4 - 3x2 - 7
+$$y^′ = 10x^9 + 15x^4 - 3x^2 - 7$$ 
 
 当n不是正整数时，指数法则也是正确的。
 
-![](file:///C:/Users/samuel/AppData/Local/Temp/msohtmlclip1/01/clip_image044.png)  
- ![](file:///C:/Users/samuel/AppData/Local/Temp/msohtmlclip1/01/clip_image046.png)  
- ![](file:///C:/Users/samuel/AppData/Local/Temp/msohtmlclip1/01/clip_image048.png)  
- ![](file:///C:/Users/samuel/AppData/Local/Temp/msohtmlclip1/01/clip_image050.png)
+$$
+\begin{aligned}
+&y=\frac{1}{x}=x^{-1} \\
+&y^′ =-1x^{-2}=-\frac{1}{x^2} \\
+&y=\sqrt{x}=x^{\frac{1}{2}} \\
+&y^′ =\frac{1}{2}x^{-\frac{1}{2}}=\frac{1}{2\sqrt{x}}
+\end{aligned}
+$$
 
 但我们尚未准备好证明它们。 在我们学习如何对更复杂的函数进行微分之前，让我们利用迄今为止学到的知识来解决一些其他有趣且实用的最优化问题。
 
-最大最小问题
+## 最大最小问题
 
-微分可帮助我们确定函数最大值或最小值的位置。 例如，在x取什么值时，抛物线y = x2 - 8x + 10会达到其最低点？
+微分可帮助我们确定函数最大值或最小值的位置。 例如，在x取什么值时，抛物线 $$y = x^2 - 8x + 10$$ 会达到其最低点？
 
-![](file:///C:/Users/samuel/AppData/Local/Temp/msohtmlclip1/01/clip_image052.jpg)
+![](.gitbook/assets/image%20%28192%29.png)
 
-抛物线y = x2 − 8x + 10 在 y′ = 0时处于它的最低点
+                                         抛物线 $$y = x^2 − 8x + 10 $$ 在 y′ = 0时处于它的最低点
 
-最低点的切线斜率必须为0。由于y'= 2x - 8，求解2x - 8 = 0。结果告诉我们：当x = 4时，抛物线处于最低点（此时y = 16 - 32 + 10 = - 6）。 对于函数y = f\(x\)，满足f'\(x\)= 0的x称为f的临界点。 对于函数y = x2 - 8x + 10，唯一的临界点是x = 4。
+最低点的切线斜率必须为0。由于 $$y^′ = 2x - 8$$ ，求解 $$2x - 8 = 0$$ 。结果告诉我们：当x = 4时，抛物线处于最低点（此时 $$y = 16 - 32 + 10 = - 6$$ ）。 对于函数 $$y = f(x)$$ ，满足 $$f^′(x)= 0$$ 的x称为f的临界点。 对于函数 $$y = x^2 - 8x + 10$$ ，唯一的临界点是x = 4。
 
-最大值发生在哪里？ 在上述问题中，没有最大值，因为x2 - 8x + 10的y值可以任意大。 但是如果x被限制在一个区间内，比如0≤ x ≤6，那么y在其中一个端点上是最大的。 在这里，我们看到当x = 0时，y = 10；当x = 6时，y = -2，所以函数在x = 0时被最大化。一般来说，我们有下面的重要定理。
+最大值发生在哪里？ 在上述问题中，没有最大值，因为 $$x^2 - 8x + 10$$ 的y值可以任意大。 但是如果x被限制在一个区间内，比如 $$0≤ x ≤6$$ ，那么y在其中一个端点上是最大的。 在这里，我们看到当x = 0时，y = 10；当x = 6时，y = -2，所以函数在x = 0时被最大化。一般来说，我们有下面的重要定理。
 
 **定理（优化定理）：**如果一个可微函数y = f\(x\)在点x\*处被最大化或最小化，那么x\*必须是f的临界点或者一个端点。
 
 让我们回到本章开头的盒子问题。 在这里，我们有兴趣使以下函数最大化
 
-y =\(12 - 2x\)2x = 4x3 - 48x2 + 144x
+$$y =(12 - 2x)^2x = 4x^3 - 48x^2 + 144x$$ 
 
 其中x要求在0到6之间。我们希望找到使y值最大化的x值。 由于我们的函数是一个多项式，我们可以看到它有导数
 
-y' = 12x2 - 96x + 144 = 12\(x2 - 8x + 12\)=  12\(x – 2\)\(x – 6\)
+$$y^′ = 12x^2 - 96x + 144 = 12(x^2 - 8x + 12)=  12(x – 2)(x – 6)$$ 
 
 因此该函数具有临界点x = 2和x = 6。
 
 该盒子在两个端点x = 0和x = 6处具有体积0，因此体积在那里最小化。 它在另一个临界点x = 2处有最大体积，即y = 128立方英寸。
 
-微分法则
+## 微分法则
 
-我们能微分的函数越多，我们能解决的问题就越多。也许微分中最重要的函数是指数函数y = ex。y = ex最特殊的地方是它等于它自己的导数。
+我们能微分的函数越多，我们能解决的问题就越多。也许微分中最重要的函数是指数函数 $$y = e^x$$ 。 $$y = e^x$$ 最特殊的地方是它等于它自己的导数。
 
-**定理:** 对y = ex, 有y′ = ex。
+**定理:** 对 $$y = e^x$$ ，有 $$y^′ = ex$$ 。
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">
-        <p><b>&#x65C1;&#x767D;</b>
-        </p>
-        <p>&#x4E3A;&#x4EC0;&#x4E48; f (x) = ex&#x6EE1;&#x8DB3; f&#x2032;(x) = ex&#xFF1F;&#x8FD9;&#x662F;&#x57FA;&#x672C;&#x7684;&#x60F3;&#x6CD5;&#x3002;&#x9996;&#x5148;&#x6CE8;&#x610F;</p>
-        <p>
-          <img src="file:///C:/Users/samuel/AppData/Local/Temp/msohtmlclip1/01/clip_image054.jpg"
-          alt/>
-        </p>
-        <p>&#x73B0;&#x5728;&#x8BF7;&#x56DE;&#x5FC6;e&#x7684;&#x5B9A;&#x4E49;</p>
-        <p>
-          <img src="file:///C:/Users/samuel/AppData/Local/Temp/msohtmlclip1/01/clip_image056.jpg"
-          alt/>
-        </p>
-        <p>&#x8FD9;&#x610F;&#x5473;&#x7740;&#x5F53;n&#x8D8A;&#x6765;&#x8D8A;&#x5927;&#x65F6;&#xFF0C;(1
-          + 1/n)n&#x8D8A;&#x6765;&#x8D8A;&#x63A5;&#x8FD1;e&#x3002;&#x73B0;&#x5728;&#x4EE4;
-          h = 1/n&#x3002;&#x5F53;n&#x975E;&#x5E38;&#x5927;&#x65F6;&#xFF0C;h = 1/n&#x63A5;&#x8FD1;0&#x3002;&#x8FD9;&#x6837;&#x5BF9;&#x63A5;&#x8FD1;0&#x7684;h&#xFF0C;e
-          &#x2248; (1 + h)1/h&#x3002;</p>
-        <p>&#x5982;&#x679C;&#x6211;&#x4EEC;&#x5728;&#x7B49;&#x5F0F;&#x4E24;&#x8FB9;&#x5404;&#x6C42;h&#x6B21;&#x5E42;&#x3002;&#x6839;&#x636E;&#x6307;&#x6570;&#x5B9A;&#x5F8B;
-          &#xFF0C;&#x6211;&#x4EEC;&#x5C06;&#x770B;&#x5230;</p>
-        <p>eh &#x2248; 1 + h</p>
-        <p>&#x6240;&#x4EE5;</p>
-        <p>
-          <img src="file:///C:/Users/samuel/AppData/Local/Temp/msohtmlclip1/01/clip_image058.jpg"
-          alt/>
-        </p>
-        <p>&#x8FD9;&#x6837;&#x5F53;h&#x8D8B;&#x8FD1;0&#x65F6;&#xFF0C;</p>
-        <p>
-          <img src="file:///C:/Users/samuel/AppData/Local/Temp/msohtmlclip1/01/clip_image060.jpg"
-          alt/>
-        </p>
-        <p>&#x8D8B;&#x8FD1;&#x4E8E; ex&#x3002;</p>
-        <p>&#x25A1;</p>
-      </th>
-    </tr>
-  </thead>
-  <tbody></tbody>
-</table>
+{% hint style="info" %}
+为什么 $$ f (x) = ex$$ 满足 $$f^′(x) = ex$$ ？这是基本的想法。首先注意
 
-是否还有其它函数是它们自己的导数？有的，不过它们都形如y = cex，其中c是一个实数。（请注意，这包括c = 0的情况，此时我们得到常数函数y = 0）。
+$$\frac{f(x+h)-f(x)}{h}=\frac{e^{x+h}-e^x}{h}=\frac{e^x(e^h-1)}{h}$$ 
+
+现在请回忆e的定义
+
+$$e=\lim_{n \to \infty} \left(1+\frac{1}{n}\right)^n$$ 
+
+这意味着当n越来越大时， $$(1 + 1/n)^n$$ 越来越接近e。现在令 h = 1/n。当n非常大时，h = 1/n接近0。这样对接近0的h， $$e ≈ (1 + h)^{1/h}$$ 。
+
+如果我们在等式两边各求h次幂。根据指数定律  ，我们将看到
+
+$$e^h ≈ 1 + h$$ 
+
+所以
+
+$$\frac{e^h-1}{h}\approx1$$ 
+
+这样当h趋近0时，
+
+$$\frac{f(x+h)-f(x)}{h}$$ 
+
+趋近于 $$e^x$$ 。
+{% endhint %}
+
+是否还有其它函数是它们自己的导数？有的，不过它们都形如 $$y = ce^x$$ ，其中c是一个实数。（请注意，这包括c = 0的情况，此时我们得到常数函数y = 0）。
 
 我们已经看到，当我们将函数相加时，和的导数就是导数的和。 那么相乘的结果是什么呢？遗憾的是乘积的导数并不是导数的乘积。但是求乘积的导数并不是很难，正如下面的定理所证明的那样。
 
-**定律（导数乘法法则）：**如果 y = f \(x\)g\(x\)，则y′ = f\(x\)g′\(x\) + f′\(x\)g\(x\)
+**定律（导数乘法法则）：**如果 $$y = f (x)g(x)$$ ，则 $$y^′ = f(x)g^′(x) + f^′(x)g(x)$$ 。
 
-例如，根据乘法法则， y = x3ex的导数可以这么求，令 f \(x\) = x3、g\(x\) = e。所以
+例如，根据乘法法则， $$ y = x^3e^x$$ 的导数可以这么求，令 $$ f (x) = x^3$$ 、 $$g(x) = e$$ 。所以
 
-![](file:///C:/Users/samuel/AppData/Local/Temp/msohtmlclip1/01/clip_image062.jpg)
+$$
+\begin{aligned}
+y^′ &= f(x)g^′(x) + f^′(x)g(x) \\
+&=  x^3e^x+3x^2e^x
+\end{aligned}
+$$
 
-注意当 f \(x\) = x3、g\(x\) = x5时，根据乘法法则，它们乘积的导数x3x5 = x8是
+注意当 $$f (x) = x^3、g(x) = x^5$$ 时，根据乘法法则，它们乘积的导数 $$x^3x^5 = x^8$$ 是
 
-![](file:///C:/Users/samuel/AppData/Local/Temp/msohtmlclip1/01/clip_image064.jpg)
+$$
+\begin{aligned}
+y^′ &= x^3(5x^4)+3x^2(x^5)\\
+&=  5x^7+3x^7=8x^7\end{aligned}
+$$
 
 结果与指数法则一致。
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">
-        <p><b>&#x65C1;&#x767D;</b>
-        </p>
-        <p><b>&#x8BC1;&#x660E;&#xFF08;&#x4E58;&#x6CD5;&#x6CD5;&#x5219;&#xFF09;&#xFF1A;</b>&#x4EE4;u(x)
-          = f (x)g(x)&#x3002;</p>
-        <p>
-          <img src="file:///C:/Users/samuel/AppData/Local/Temp/msohtmlclip1/01/clip_image066.jpg"
-          alt/>
-        </p>
-        <p>&#x5206;&#x5B50;&#x90E8;&#x5206;&#x540C;&#x65F6;&#x52A0;&#x4E0A;&#x548C;&#x51CF;&#x53BB;
-          f (x + h)g(x)</p>
-        <p>
-          <img src="file:///C:/Users/samuel/AppData/Local/Temp/msohtmlclip1/01/clip_image068.jpg"
-          alt/>
-        </p>
-        <p>&#x968F;&#x7740; h &#x2192; 0&#xFF0C;&#x7ED3;&#x679C;&#x53D8;&#x6210;f
-          (x)g&#x2032;(x) + f&#x2032;(x)g(x)</p>
-        <p>&#x25A1;</p>
-      </th>
-    </tr>
-  </thead>
-  <tbody></tbody>
-</table>
+{% hint style="info" %}
+**证明（乘法法则）：**令 $$u(x) = f (x)g(x)$$ 。
+
+$$\frac{u(x+h)-u(x)}{h}=\frac{f(x+h)g(x+h)-f(x)g(x)}{h}$$ 
+
+分子部分同时加上和减去 $$ f (x + h)g(x) $$ 
+
+$$\frac{f(x+h)g(x+h)-f(x+h)g(x)+f(x+h)g(x)-f(x)g(x)}{h} \\ =f(x+h)\left(\frac{g(x+h)-g(x)}{h}\right)+\left(\frac{f(x+h)-f(x)}{h}\right)g(x)$$ 
+
+随着 h → 0，结果变成 $$f (x)g^′(x) + f^′(x)g(x)$$ 。
+
+□
+{% endhint %}
 
 乘法法则不仅在计算上有用：它还使我们能够找到其它函数的导数。 例如，我们以前证明了正指数的指数法则。 但是现在我们可以证明该法则在指数为分数和负数时也成立。
 
-例如指数法则预测：如果![](file:///C:/Users/samuel/AppData/Local/Temp/msohtmlclip1/01/clip_image070.png)，则![](file:///C:/Users/samuel/AppData/Local/Temp/msohtmlclip1/01/clip_image072.png)。
+例如指数法则预测：如果 $$y=\sqrt{x}=x^{\frac{1}{2}}$$ ，则 $$y^′=\frac{q}{2}x^{-\frac{1}{2}}=\frac{1}{2\sqrt{x}}$$ 。
 
 让我们使用乘法法则验证一下它为何是对的。假设
 
-![](file:///C:/Users/samuel/AppData/Local/Temp/msohtmlclip1/01/clip_image074.jpg)
-
-![](file:///C:/Users/samuel/AppData/Local/Temp/msohtmlclip1/01/clip_image076.jpg)
+$$
+\begin{aligned}
+u(x)&=\sqrt{x} \\
+u(x)u(x)&=\sqrt{x}\sqrt{x}=x
+\end{aligned}
+$$
 
 我们在等式两边同时求导，根据乘法法则，我们得到
 
-u\(x\)u′\(x\) + u′\(x\)u\(x\) = 1
+$$u(x)u′(x) + u′(x)u(x) = 1$$ 
 
-这样2u\(x\)u′\(x\) = 1，
+这样 $$2u(x)u^′(x) = 1$$ ，
 
-![](file:///C:/Users/samuel/AppData/Local/Temp/msohtmlclip1/01/clip_image078.jpg)
+$$
+u^′(x)=\frac{1}{2u(x)}=\frac{1}{2\sqrt{x}}
+$$
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">
-        <p><b>&#x65C1;&#x767D;</b>
-        </p>
-        <p>&#x6307;&#x6570;&#x6CD5;&#x5219;&#x540C;&#x65F6;&#x9884;&#x6D4B;&#x4E86;&#x8D1F;&#x6307;&#x6570;
-          y = x&#x2212;n&#x7684;&#x5BFC;&#x6570;</p>
-        <p>
-          <img src="file:///C:/Users/samuel/AppData/Local/Temp/msohtmlclip1/01/clip_image080.jpg"
-          alt/>
-        </p>
-        <p>&#x4E3A;&#x8BC1;&#x660E;&#x8FD9;&#x4E00;&#x70B9;&#xFF0C;&#x4EE4;u(x) =
-          x&#x2212;n, &#x5176;&#x4E2D; n &#x2265; 1&#x3002;&#x6839;&#x636E;&#x5B9A;&#x4E49;&#xFF0C;
-          x &#x2260; 0&#x65F6;&#xFF0C;&#x6709;u(x) xn = x&#x2212;nxn = x0 = 1</p>
-        <p>&#x5F53;&#x6211;&#x4EEC;&#x5BF9;&#x7B49;&#x5F0F;&#x4E24;&#x8FB9;&#x540C;&#x65F6;&#x6C42;&#x5FAE;&#x5206;&#xFF0C;&#x4E58;&#x6CD5;&#x6CD5;&#x5219;&#x544A;&#x8BC9;&#x6211;&#x4EEC;</p>
-        <p>u(x)(nxn&#x2212;1) + u&#x2032;(x)xn = 0</p>
-        <p>&#x5C06;&#x7B2C;&#x4E00;&#x9879;&#x79FB;&#x5230;&#x7B49;&#x5F0F;&#x53F3;&#x8FB9;&#xFF0C;&#x5E76;&#x540C;&#x65F6;&#x9664;&#x4EE5;xn</p>
-        <p>
-          <img src="file:///C:/Users/samuel/AppData/Local/Temp/msohtmlclip1/01/clip_image082.jpg"
-          alt/>
-        </p>
-        <p>&#x25A1;</p>
-        <p>&#x8FD9;&#x6837;&#xFF0C;&#x5982;&#x679C; y = 1/x = x&#x2212;1&#xFF0C;&#x5219;y&#x2032;
-          = &#x2212;1/x2&#x3002;</p>
-        <p>&#x5982;&#x679C;y = 1/x2 = x&#x2212;2&#xFF0C;&#x5219;y&#x2032; = &#x2212;
-          2x&#x2212;3 = &#x2212; 2/x3</p>
-      </th>
-    </tr>
-  </thead>
-  <tbody></tbody>
-</table>
+{% hint style="info" %}
+指数法则同时预测了负指数 $$ y = x^{−n}$$ 的导数
+
+$$y^′=-nx^{-n-1}=\frac{-n}{x^{n+1}}$$ 
+
+为证明这一点，令 $$u(x) = x^{−n}$$ ，其中 n ≥ 1。根据定义， x ≠ 0时，有 $$u(x) x^n = x^{−n}x^n = x^0 = 1$$ 。
+
+当我们对等式两边同时求微分，乘法法则告诉我们 $$u(x)(nx^{n−1}) + u^′(x)x^n = 0$$ 。
+
+将第一项移到等式右边，并同时除以 $$x^n$$ 
+
+$$u^′(x)=-n\frac{u(x)}{x}=\frac{-n}{x^{n+1}}$$ 
+
+□
+
+这样，如果 $$ y = 1/x = x^{−1}$$ ，则 $$y^′ = −1/x^2$$ 。
+
+如果 $$y = 1/x^2 = x^{−2}$$ ，则 $$y^′ = − 2x^{−3} = − 2/x^3$$ 。
+{% endhint %}
 
 第7章中，我们希望能找到是函数y = x + 1/x值最小的正数x。
 
-使用巧妙的几何方法，我们证明这一点是x = 1。但是使用微积分，我们不必如此聪明。我们仅需解决y′ = 0，即1 − 1/x2 = 0。满足我们需求的唯一正数是x = 1。
+使用巧妙的几何方法，我们证明这一点是x = 1。但是使用微积分，我们不必如此聪明。我们仅需解决y′ = 0，即 $$1 − 1/x^2 = 0$$ 。满足我们需求的唯一正数是x = 1。
 
 三角函数也可求微分。 请注意，为了使下面的定理成立，角必须以弧度表示。
 
-**定理：**如果y = sin x，则y'= cos x。 如果y = cos x，则y'=-sin x。 换句话说，正弦的导数是余弦，余弦的导数是负的正弦。
+**定理：**如果 $$y = \sin x$$ ，则 $$y^′ = \cos x$$ 。 如果 $$y = \cos x$$ ，则 $$y^′ =-\sin x$$ 。 换句话说，正弦的导数是余弦，余弦的导数是负的正弦。
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">
-        <p>&#x65C1;&#x767D;</p>
-        <p><b>&#x8BC1;&#x660E;&#xFF1A;</b>&#x8BC1;&#x660E;&#x4F9D;&#x8D56;&#x4E8E;&#x4E0B;&#x9762;&#x7684;&#x5F15;&#x7406;&#x3002;
-          &#xFF08;&#x5F15;&#x7406;&#x662F;&#x4E00;&#x4E2A;&#x53EF;&#x4EE5;&#x5E2E;&#x52A9;&#x6211;&#x4EEC;&#x8BC1;&#x660E;&#x66F4;&#x91CD;&#x8981;&#x7684;&#x5B9A;&#x7406;&#x7684;&#x63CF;&#x8FF0;&#x3002;&#xFF09;</p>
-        <p><b>&#x5F15;&#x7406;&#xFF1A;</b>
-        </p>
-        <p>
-          <img src="file:///C:/Users/samuel/AppData/Local/Temp/msohtmlclip1/01/clip_image084.jpg"
-          alt/>
-        </p>
-        <p>&#x8FD9;&#x5C31;&#x662F;&#x8BF4;&#xFF0C;&#x5BF9;&#x4E8E;&#x63A5;&#x8FD1;0&#x7684;&#x4EFB;&#x4F55;&#x5FAE;&#x5C0F;&#x89D2;&#x5EA6;h&#xFF08;&#x4EE5;&#x5F27;&#x5EA6;&#x8868;&#x793A;&#xFF09;&#xFF0C;&#x5176;&#x6B63;&#x5F26;&#x503C;&#x975E;&#x5E38;&#x63A5;&#x8FD1;h&#xFF0C;&#x5176;&#x4F59;&#x5F26;&#x503C;&#x975E;&#x5E38;&#x63A5;&#x8FD1;1&#x3002;&#x4F8B;&#x5982;&#xFF0C;&#x8BA1;&#x7B97;&#x5668;&#x663E;&#x793A;sin
-          0.0123 = 0.0122996.... &#x548C;cos0.0123 = 0.9999243...&#x3002;&#x73B0;&#x5728;&#x5047;&#x8BBE;&#x5F15;&#x7406;&#x6210;&#x7ACB;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x5FAE;&#x5206;&#x6B63;&#x5F26;&#x51FD;&#x6570;&#x548C;&#x4F59;&#x5F26;&#x51FD;&#x6570;&#x3002;
-          &#x6211;&#x4EEC;&#x4F7F;&#x7528;&#x4E86;&#x7B2C;9&#x7AE0;&#x7684;sin(A
-          + B)&#x6052;&#x7B49;&#x5F0F;&#x3002;</p>
-        <p>
-          <img src="file:///C:/Users/samuel/AppData/Local/Temp/msohtmlclip1/01/clip_image086.jpg"
-          alt/>
-        </p>
-        <p>&#x968F;&#x7740; h &#x2192; 0&#xFF0C;&#x6839;&#x636E;&#x6211;&#x4EEC;&#x7684;&#x5F15;&#x7406;&#xFF0C;&#x4E0A;&#x9762;&#x7684;&#x8868;&#x8FBE;&#x5F0F;&#x53EF;&#x4EE5;&#x5199;&#x6210;(sin
-          x)(0) + (cos x)(1) = cos x.&#x3002;&#x540C;&#x6837;&#x53EF;&#x4EE5;&#x5F97;&#x5230;</p>
-        <p>
-          <img src="file:///C:/Users/samuel/AppData/Local/Temp/msohtmlclip1/01/clip_image088.jpg"
-          alt/>
-        </p>
-        <p>&#x5F53;h &#x2192; 0&#xFF0C;&#x8868;&#x8FBE;&#x5F0F;&#x53D8;&#x6210;(cos
-          x)(0) &#x2212; (sin x)(1) = &#x2212; sin x</p>
-        <p>&#x7ED3;&#x8BBA;&#x5F97;&#x8BC1;</p>
-        <p>&#x25A1;</p>
-      </th>
-    </tr>
-  </thead>
-  <tbody></tbody>
-</table>
+{% hint style="info" %}
+**证明：**证明依赖于下面的引理 （引理是一个可以帮助我们证明更重要的定理的描述）
+
+。
+
+**引理：**
+
+\*\*\*\*$$\lim_{h \to 0}\frac{\sinh}{h}=1\ 且 \lim_{h \to 0}\frac{\cos h-1}{h}=0$$ ****
+
+这就是说，对于接近0的任何微小角度h（以弧度表示），其正弦值非常接近h，其余弦值非常接近1。例如，计算器显示sin 0.0123 = 0.0122996.... 和cos0.0123 = 0.9999243...。现在假设引理成立，我们可以微分正弦函数和余弦函数。 我们使用了第9章的sin\(A + B\)恒等式。
+
+$$\begin{aligned} \frac{\sin(x+h)-\sin x}{h}&=\frac{\sin x \cos h+\sin h \cos x - \sin x}{h} \\ &= \sin x\left(\frac{\cos h -1}{h}\right)+\cos x \left(\frac{\sin h}{h}\right) \end{aligned}$$ 
+
+随着 h → 0，根据我们的引理，上面的表达式可以写成 $$(\sin x)(0) + (\cos x)(1) = \cos x$$ 。同样可以得到
+
+$$\begin{aligned} \frac{\cos(x+h)-\cos x}{h}&=\frac{\cos x \cos h-\sin h \sin x - \cos x}{h} \\ &= \cos x\left(\frac{\cos h -1}{h}\right)-\sin x \left(\frac{\sin h}{h}\right) \end{aligned}$$ 
+
+当h → 0，表达式变成 $$(\cos x)(0) − (\sin x)(1) = − \sin x$$ 。
+
+结论得证
+
+□
+{% endhint %}
 
 <table>
   <thead>
