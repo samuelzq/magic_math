@@ -366,99 +366,40 @@ $$\begin{aligned} \frac{\cos(x+h)-\cos x}{h}&=\frac{\cos x \cos h-\sin h \sin x 
 □
 {% endhint %}
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">
-        <p><b>&#x65C1;&#x767D;</b>
-        </p>
-        <p>&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x5229;&#x7528;&#x4E0B;&#x56FE;&#x8BC1;&#x660E;</p>
-        <p>
-          <img src="file:///C:/Users/samuel/AppData/Local/Temp/msohtmlclip1/01/clip_image090.jpg"
-          alt/>
-        </p>
-        <p>
-          <img src="file:///C:/Users/samuel/AppData/Local/Temp/msohtmlclip1/01/clip_image092.jpg"
-          alt/>
-        </p>
-        <p>&#x5728;&#x4E0A;&#x9762;&#x7684;&#x5355;&#x4F4D;&#x5706;&#x4E0A;R = (1,
-          0)&#x3001;P = (cos h, sin h)&#x3002;&#x5176;&#x4E2D;h&#x662F;&#x4E00;&#x4E2A;&#x5F88;&#x5C0F;&#x7684;&#x6B63;&#x89D2;&#x3002;&#x540C;&#x6837;&#x5728;&#x76F4;&#x89D2;&#x4E09;&#x89D2;&#x5F62;OQR&#x4E2D;&#xFF0C;</p>
-        <p>
-          <img src="file:///C:/Users/samuel/AppData/Local/Temp/msohtmlclip1/01/clip_image094.jpg"
-          alt/>
-        </p>
-        <p>&#x76F4;&#x89D2;&#x4E09;&#x89D2;&#x5F62;OPS&#x7684;&#x9762;&#x79EF;&#x662F;&#xBD;cos
-          h sin h&#xFF0C;&#x76F4;&#x89D2;&#x4E09;&#x89D2;&#x5F62;OQR&#x7684;&#x9762;&#x79EF;</p>
-        <p>
-          <img src="file:///C:/Users/samuel/AppData/Local/Temp/msohtmlclip1/01/clip_image096.jpg"
-          alt/>
-        </p>
-        <p>&#x73B0;&#x5728;&#x770B;&#x770B;&#x6247;&#x5F62;OPR&#xFF0C;&#x5B83;&#x662F;&#x4E00;&#x4E2A;&#x6954;&#x5F62;&#x3002;&#x5355;&#x4F4D;&#x5706;&#x9762;&#x79EF;&#x662F;&#x3C0;12
-          = &#x3C0;&#xFF0C;&#x6247;&#x5F62;OPS&#x7684;&#x9762;&#x79EF;&#x662F;&#x5355;&#x4F4D;&#x5706;&#x7684;h/(2&#x3C0;)&#x3002;&#x8FD9;&#x6837;&#x6247;&#x5F62;&#x9762;&#x79EF;&#x662F;&#x3C0;(h/2&#x3C0;)
-          = h/2&#x3002;</p>
-        <p>&#x56E0;&#x4E3A;&#x6247;&#x5F62;OPS&#x5305;&#x542B;&#x4E09;&#x89D2;&#x5F62;OPS&#x5E76;&#x88AB;&#x4E09;&#x89D2;&#x5F62;OQR&#x5305;&#x542B;&#x3002;&#x6BD4;&#x8F83;&#x5B83;&#x4EEC;&#x7684;&#x9762;&#x79EF;&#xFF0C;&#x6211;&#x4EEC;&#x5F97;&#x5230;</p>
-        <p>
-          <img src="file:///C:/Users/samuel/AppData/Local/Temp/msohtmlclip1/01/clip_image098.jpg"
-          alt/>
-        </p>
-        <p>&#x901A;&#x8FC7;&#x90FD;&#x4E58;&#x4EE5;
-          <img src="file:///C:/Users/samuel/AppData/Local/Temp/msohtmlclip1/01/clip_image100.png"
-          alt/>&#xFF0C;&#x6211;&#x4EEC;&#x5F97;&#x5230;</p>
-        <p>
-          <img src="file:///C:/Users/samuel/AppData/Local/Temp/msohtmlclip1/01/clip_image102.png"
-          alt/>
-        </p>
-        <p>&#x5BF9;&#x4E8E;&#x6B63;&#x6570;&#xFF0C;&#x5982;&#x679C;a &lt; b &lt;
-          c, &#x5219; 1/c &lt; 1/b &lt; 1/a&#x3002;&#x6240;&#x4EE5;&#xFF0C;</p>
-        <p>
-          <img src="file:///C:/Users/samuel/AppData/Local/Temp/msohtmlclip1/01/clip_image104.png"
-          alt/>
-        </p>
-        <p>&#x73B0;&#x5728;&#x5230;h &#x2192; 0&#xFF0C;cosh&#x548C;1/cosh&#x90FD;&#x8D8B;&#x8FD1;&#x4E8E;1&#x3002;&#x8FD9;&#x6837;</p>
-        <p>
-          <img src="file:///C:/Users/samuel/AppData/Local/Temp/msohtmlclip1/01/clip_image106.png"
-          alt/>
-        </p>
-        <p>&#x25A1;</p>
-      </th>
-    </tr>
-  </thead>
-  <tbody></tbody>
-</table>
+{% hint style="info" %}
+我们可以利用下图证明
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">
-        <p>&#x65C1;&#x767D;</p>
-        <p>&#x4F7F;&#x7528;&#x4E4B;&#x524D;&#x7684;&#x7ED3;&#x679C;&#x548C;&#x5C11;&#x91CF;&#x7684;&#x4EE3;&#x6570;&#xFF0C;&#x6211;&#x4EEC;&#x80FD;&#x8BC1;&#x660E;
-          <img
-          src="file:///C:/Users/samuel/AppData/Local/Temp/msohtmlclip1/01/clip_image108.png"
-          alt/>&#x3002;&#x5229;&#x7528;&#x4E4B;&#x524D;&#x7684;&#x7ED3;&#x679C;&#x548C;&#x51E0;&#x884C;&#x4EE3;&#x6570;&#xFF08;&#x5305;&#x62EC;
-          <img
-          src="file:///C:/Users/samuel/AppData/Local/Temp/msohtmlclip1/01/clip_image110.png"
-          alt/>&#xFF09;&#x3002;</p>
-        <p>
-          <img src="file:///C:/Users/samuel/AppData/Local/Temp/msohtmlclip1/01/clip_image112.png"
-          alt/>
-          <br />
-          <img src="file:///C:/Users/samuel/AppData/Local/Temp/msohtmlclip1/01/clip_image114.png"
-          alt/>
-        </p>
-        <p>&#x73B0;&#x5728;&#x53E6;h &#x2192; 0&#xFF0C;
-          <img src="file:///C:/Users/samuel/AppData/Local/Temp/msohtmlclip1/01/clip_image116.png"
-          alt/>&#xFF0C;
-          <img src="file:///C:/Users/samuel/AppData/Local/Temp/msohtmlclip1/01/clip_image118.png"
-          alt/>= 0&#x3002;</p>
-        <p>&#x6240;&#x4EE5;
-          <img src="file:///C:/Users/samuel/AppData/Local/Temp/msohtmlclip1/01/clip_image120.png"
-          alt/>&#x3002;</p>
-        <p>&#x25A1;</p>
-      </th>
-    </tr>
-  </thead>
-  <tbody></tbody>
-</table>
+$$\lim_{h \to 0}\frac{\sin h}{h}=1$$ 
+
+![](.gitbook/assets/image%20%28195%29.png) 
+
+在上面的单位圆上 $$R = (1,\ 0)、P = (\cos h,\ \sin h)$$ 。其中h是一个很小的正角。同样在直角三角形OQR中， $$\tan h = \frac{QR}{OR}=\frac{QR}{1}=QR$$ 。![](file:///C:/Users/samuel/AppData/Local/Temp/msohtmlclip1/01/clip_image094.jpg)
+
+直角三角形OPS的面积是 $$½\cos h \sin h$$ ，直角三角形OQR的面积 $$\frac{1}{2}ORQR=\frac{1}{2}\tan h=\frac{\sin h}{2\cos h}$$ 。![](file:///C:/Users/samuel/AppData/Local/Temp/msohtmlclip1/01/clip_image096.jpg)
+
+现在看看扇形OPR，它是一个楔形。单位圆面积是 $$π1^2 = π$$ ，扇形OPS的面积是单位圆的 $$h/(2π)$$ 。这样扇形面积是 $$π(h/2π) = h/2$$ 。
+
+因为扇形OPS包含三角形OPS并被三角形OQR包含。比较它们的面积，我们得到 $$\frac{1}{2}\cos h \sin h<\frac{h}{2}<\frac{\sin h}{2\cos h}$$ 。![](file:///C:/Users/samuel/AppData/Local/Temp/msohtmlclip1/01/clip_image098.jpg)
+
+通过都乘以 $$\left(\frac{2}{\sin h}\right)>0$$ ，我们得到 $$\cos h < \frac{h}{\sin h} < \frac{1}{\cos h}$$ 。![](file:///C:/Users/samuel/AppData/Local/Temp/msohtmlclip1/01/clip_image102.png)
+
+对于正数，如果a &lt; b &lt; c, 则 1/c &lt; 1/b &lt; 1/a。所以， $$\cos h < \frac{\sin h}{h} < \frac{1}{\cos h}$$ 。![](file:///C:/Users/samuel/AppData/Local/Temp/msohtmlclip1/01/clip_image104.png)
+
+现在到h → 0，cosh和1/cosh都趋近于1。这样 $$\lim_{h \to 0}\frac{\sin h}{h}=1$$ 。![](file:///C:/Users/samuel/AppData/Local/Temp/msohtmlclip1/01/clip_image106.png)
+
+□
+{% endhint %}
+
+{% hint style="info" %}
+使用之前的结果和少量的代数，我们能证明 $$\lim_{h \to 0}\frac{\cos h -1}{h}=0$$ 。利用之前的结果和几行代数（包括 $$\sin^2h+\cos^2h=1$$ ）。
+
+$$\frac{\cosh -1}{1}=\frac{\cos h-1}{1}*\frac{\cos h+1}{\cos h+1}=\frac{\cos^2h-1}{h(\cosh+1)}\\ =\frac{-\sin^2h}{h(\cosh+1)}=-\frac{\sin h}{h}*\left(\frac{\sin h}{(\cos h +1}\right)$$   
+ 现在另h → 0， $$\frac{\sin h}{h}\to 1$$ ， $$\frac{\sin h}{\cos h + 1} \to \frac{0}{2} = 0$$。
+
+所以 $$\lim_{h \to 0}\frac{\cos h - 1}{h}=0$$ 。
+
+□
+{% endhint %}
 
 一旦我们知道了正弦和余弦的导数，我们就可以对正切函数进行微分。
 
